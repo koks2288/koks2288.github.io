@@ -1,0 +1,1100 @@
+<!-- <?php
+if(isset($_POST['send']))
+{
+$to = "vs.kurson@gmail.com";
+$from = 'sgbykaniv@gmail.com';
+$subject = "beautybusiness.top(заявка)";
+$message = 'Имя: '.$_POST['name'].'; Email: '.$_POST['mail'].'; Телефон: '.$_POST['telephone'].'; От кого пришел: '.$_POST['kod'].';';
+$headers = "Content-type: text/html; charset=UTF-8 \r\n";
+$headers .= "From: <sgbykaniv@gmail.com>\r\n";
+$result = mail($to, $subject, $message, $headers);
+
+    if ($result){ 
+        echo  ("Cообщение успешно отправленно. Пожалуйста, оставайтесь на связи");
+    } 
+    else{
+        echo ("Cообщение не отправленно. Пожалуйста, попрбуйте еще раз");
+    }
+}
+/*else {
+echo ("Обязательные поля не заполнены. Введите Телефон");
+}*/
+?> -->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>РАСКРУТИ СВОЮ МЕЧТУ</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/loader.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="bower_components/fancybox-master/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+</head>
+<body>
+	<div id="fakeloader"></div>
+	<div class="container-fluid section_one">
+		<h1>Продвижение в Beauty-Бизнесе<br>
+			<h4>+ Повышение квалификации Beauty-мастера</h4>
+		</h1>
+			<div class="row">
+				<div class="col-lg-4 col-sm-6 col-md-4">
+					
+						<li class="section_one_block">
+							<img src="img/first_block/rr.png" alt="#">
+							<p>
+								НОВЫЕ ПРОГРЕСCИВНЫЕ ТЕХНИКИ: НОГТЕВОЙ СЕРВИС, MAKE-UP, БРОВИ
+							</p>
+						</li>
+						<li class="section_one_block">
+							<img src="img/first_block/tt.png" alt="#">
+							<p>
+								ТЕНДЕНЦИИ И НОВИНКИ В BEAUTY-БИЗНЕСЕ
+							</p>
+						</li>
+						<li class="section_one_block">
+							<img src="img/first_block/ee.png" alt="#">
+							<p>
+								ОНЛАЙН ПРОДВИЖЕНИЕ И КАМПАНИИ В СОЦСЕТЯХ И МЕССЕНДЖЕРАХ
+							</p>
+						</li>
+					
+				</div>
+				<div class="col-lg-4 col-sm-6 col-md-4">
+					
+						<li class="section_one_block">
+							<img src="img/first_block/ww.png" alt="#">
+							<p>
+								БЕСПЛАТНОЕ ПРИВЛЕЧЕНИЕ КЛИЕНТОВ И «САРАФАННОЕ РАДИО»
+							</p>
+						</li>
+						<li class="section_one_block">
+							<img src="img/first_block/qq.png" alt="#">
+							<p>
+								ОФФЛАЙН ПРОДВИЖЕНИЕ СВОЕГО САЛОНА
+							</p>
+						</li>
+						<li class="section_one_block">
+							<img src="img/first_block/yy.png" alt="#">
+							<p>
+								ЮРИДИЧЕСКИЕ ТОНКОСТИ И МОНЕТИЗАЦИЯ
+							</p>
+						</li>
+					
+				</div>
+			</div>
+			<div class="first_button">
+					<li class="vizov">
+						<a>Онлайн курс</a>
+					</li>
+			</div>
+	</div> 
+	<div class="container-fluid section_two">
+		<h2>Информация о курсе
+		</h2>
+		<div class="row">
+				<div class="two_block">
+					<img src="img/user.png"  alt="#">
+					<p>6-ть ТОП спикеров</p>
+				</div>
+				<div  class="two_block">
+					<img src="img/small54bf784647a9c.png" alt="#">
+					<p>Работа в группе</p>
+				</div>
+				<div class="two_block">
+					<img src="img/calendar.png" alt="#">
+					<p>С 12 июля 16 заняти <br> по 1,5 часа</p>
+				</div>
+				<div  class="two_block">
+					<img src="img/stream.png" alt="#">
+					<p>Онлайн трансляция <br>+ запись</p>
+				</div>
+		</div>
+		<div class="button">
+			<li class="vizov">
+				<a>Записаться на курс</a>
+			</li>
+		</div>
+	</div>
+	<div class="tabs-block">
+		<div class="container ">
+			<h1>РАСПИСАНИЕ ЗАНЯТИЙ</h1>
+			<div class="tabs-wrap">
+				<div class="tabs-header multi-line">
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item active" data-id="0" style="display: inline-block; vertical-align: middle;">
+						<span class="day">12</span>
+						<span class="month"> / 07</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="1" style="display: inline-block; vertical-align: middle;">
+						<span class="day">14</span>
+						<span class="month"> / 07</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="2" style="display: inline-block; vertical-align: middle;">
+						<span class="day">17</span>
+						<span class="month"> / 07</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="3" style="display: inline-block; vertical-align: middle;">
+						<span class="day">19</span>
+						<span class="month"> / 07</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="4" style="display: inline-block; vertical-align: middle;">
+						<span class="day">21</span>
+						<span class="month"> / 07</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="new-line clearfix"></div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="5" style="display: inline-block; vertical-align: middle;">
+						<span class="day">24</span>
+						<span class="month"> / 07</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="6" style="display: inline-block; vertical-align: middle;">
+						<span class="day">26</span>
+						<span class="month"> / 07</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="7" style="display: inline-block; vertical-align: middle;">
+						<span class="day">28</span>
+						<span class="month"> / 07</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="8" style="display: inline-block; vertical-align: middle;">
+						<span class="day">31</span>
+						<span class="month"> / 07</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="9" style="display: inline-block; vertical-align: middle;">
+						<span class="day">02</span>
+						<span class="month"> / 08</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<br>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="10" style="display: inline-block; vertical-align: middle;">
+						<span class="day">04</span>
+						<span class="month"> / 08</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="11" style="display: inline-block; vertical-align: middle;">
+						<span class="day">07</span>
+						<span class="month"> / 08</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="12" style="display: inline-block; vertical-align: middle;">
+						<span class="day">09</span>
+						<span class="month"> / 08</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="13" style="display: inline-block; vertical-align: middle;">
+						<span class="day">11</span>
+						<span class="month"> / 08</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="14" style="display: inline-block; vertical-align: middle;">
+						<span class="day">14</span>
+						<span class="month"> / 08</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="15" style="display: inline-block; vertical-align: middle;">
+						<span class="day">16</span>
+						<span class="month"> / 08</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="tab-header-item-wrap" style="display: inline-block; white-space: nowrap;">
+						<div class="tabs-header-item" data-id="16" style="display: inline-block; vertical-align: middle;">
+						<span class="day">18</span>
+						<span class="month"> / 08</span>
+						</div>
+						<div class="tabs-header-divider" style="display: inline-block; vertical-align: middle; margin-top: -2px;"></div>
+					</div>
+					<div class="new-line clearfix"></div>
+				</div>
+				<!-- ////////// -->
+				<div class="tabs-items">
+					<div class="tab active" data-id="0">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Комплексное продвижение Beauty-Бизнеса в интернете</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="1">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Продвижение Бьюти бизнеса в социальных сетях</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="2">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Мастер класс «Ногтевой сервис»</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="3">
+					<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Занятие «Ногтевой сервис»</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="4">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Общение, ответы вопросы по курсу</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="5">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Мастер класс «Make-Up» (3 способа создания идеальной кожи)</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="6">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Занятие «Make-Up» (3 способа создания идеальной кожи)</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="7">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Мастер класс «Lash&Brow» (Сложная архитектура Бровей)</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="8">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Занятие «Lash&Brow»  (Архитектура Бровей)</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="9">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Общение, ответы вопросы по курсу</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="10">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Запуск рекламных кампаний Instagram и Facebook</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="11">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Контент и эффективные кейсы рекламных кампаний Instagram и Facebook</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="12">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Общение, ответы вопросы по курсу</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="13">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Модель организации салона красоты и сети салонов</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="14">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Продвижение и организация бизнес процессов</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="15">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">– Старт на масштабирование и Юридические аспекты</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+					<div class="tab" data-id="16">
+						<table class="tab-item">
+						<tbody><tr>
+						<td class="tab-item-left">19:30-21:00</td>
+						<td class="tab-item-right">
+						<span class="tab-item-title">Практика построения успешного бизнеса красоты</span>
+						</td>
+						</tr>
+						<tr class="space">
+						<td></td>
+						<td></td>
+						</tr>
+						</tbody></table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container section_four">
+		<h2>КОРОТКО О КУРСЕ</h2>
+		<p>Вы переполнены работой и не можете принимать клиентов или у вас трудности с клиентами, это только на первый взгляд разные проблемы, оба случая говорят о системных ошибках предпринимательской деятельности. Умелое расширение Beauty-Бизнеса - достаточно сложная задача, справиться с которой поможет понимание ряда ключевых факторов и особенностей.
+		</p>
+		<h5> На курсах "Продвижение в Beauty-Бизнесе" + <br> "Повышение квалификации бюти мастера" вы узнаете:</h5>
+		<div class="row">
+			<div class="col-lg-10 col-sm-8 col-md-6">
+				<ul>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					Как эффективно продвигать свой бизнес онлайн
+					</li>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					Нужно ли коммуницировать с клиентами через мессенджеры, боты, email-рассылки, соцсети и краудсорсинг
+					</li>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					Все об открытии своего салона или расширении сети, от выбора помещений до рекламы
+					</li>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					Как оптимизировать юридические аспекты работы бюти салона
+					</li>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					Подводные камни при открытии и раскрутке от практиков
+					</li>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					Как привлечь финансирование на открытие или масштабирование
+					</li>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					О клиентском сервисе его оценке, контроле и программах лояльности
+					</li>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					Как выстроить успешную маркетинговую стратегию
+					</li>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					Какие новые тенденции на рынке
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-2 col-sm-4 col-md-6">
+				<img src="img/533effb5a19c4963463c9969fd3c4b72.png" alt="#">
+			</div>
+		</div>
+		<h4>«Продвижение в Beauty-Бизнесе» — уникальный проект, вы сдвинетесь с места вперед уже в процессе прохождения</h4>
+		<hr style="width:90%; margin-left: 5%; height: 1px; background-color: #444;">
+		<h2>Вас ждут</h2>
+		<div class="row">
+			<div class="col-lg-10 col-sm-8 col-md-6">
+				<ul>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					Практикумы
+					</li>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					Домашние задания и проверка
+					</li>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					Работа в группе
+					</li>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					Личные консультации
+					</li>
+					<li>
+						<i style="color: yellow;" class="fa fa-star"></i>
+					Масса полезных материалов
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-2 col-sm-4 col-md-6">
+				<img src="img/4a56a77886b4d1f9df93c8b735ef60b6.png" alt="#">
+			</div>
+		</div>
+		<h4>Лозунг академии - развиваемся вместе! Будьте с лучшими)</h4>
+	</div>
+	<!-- <hr style="width:90%; margin-left: 5%; height: 1px; background-color: #444;"> -->
+	<div class="container-fluid section_free">
+		<h2>Эксперты курса</h2>
+			<div class="container info_block">
+				<div class="foto_block">
+					<img style="	width: 275px;	
+						height: 275px;
+						margin-right: 50px;
+						//box-shadow: 0px 0px 35px 0px #fff;	
+						//border-radius: 50%;
+					" src="img/spiker/malceva.png" alt="#">
+					<p style="font-style: italic;"><b style="font-size: 24px;">Алина Мальцева
+					</b> <br>
+					Тема: <b >«Успешное построение <br> Бьюти бизнеса»</b> <br>
+					- 2 урока <br>
+					- Личные рекомендации
+					</p>
+				</div>
+				<p>
+					— опыт построения ряда бизнес проектов в Бьюти Индустрии «с нуля». <br>
+					<br>
+
+					— в  бизнесе с 2005г., в бизнесе индустрии красоты с 2008г. <br>
+					<br>
+
+					— сертифицированный тренер и  коуч по стартапам, <br> 
+					<br>
+
+					—  входит в   Всеукраинскую объединяющую ассоциацию тренеров и консультантов по бизнесу. <br>
+					<br>
+
+					—  с 2008 г. создатель и владелец  действующего бизнеса в beauty индустрии «Linuell». <br>
+					<br>
+
+					— 2014 г. создатель и владелец  портала "TvoyGid". <br>
+					<br>
+
+					— 2018 г. новые проекты " Portrait by foto" и "Coach-online". <br>
+					<a class="open_spiker show_hide" rel="#slidingDiv5" href="#">Показать еще спикеров</a>
+				</p>
+			</div>
+		<div id="slidingDiv5">
+			<div class="container info_block">
+				<div class="foto_block">
+					<img style="	width: 275px;	
+						height: 325px;
+						margin-right: 50px;
+						//box-shadow: 0px 0px 35px 0px #fff;	
+						//border-radius: 50%;
+					" src="img/spiker/jelepa.png" alt="#">
+					<p style="font-style: italic;"><b style="font-size: 24px;">Сергей Желепа</b> <br>
+					Тема: <b >«Онлайн продвижение Beauty-Бизнеса»</b> <br>
+					- 4 урока <br>
+					- Личные рекомендации
+					</p>
+				</div>
+				<p>
+					Сергей Желепа — руководитель отдела-маркетинга в Академии интернет-маркетинга WebPromoExperts. 
+					<br>
+					В маркетинге Сергей с 2011 года в интернет-маркетинге. В академии WebPromoExperts Сергей курирует маркетинг, занимается SMM и email-маркетингом, ведет работу с партнерами. 
+					<br>
+					Проводил корпоративное обучение для: Медиагруп Украина: телеканал «Украина», «НЛО TV», «Футбол 1»/«Футбол 2», газета «Сегодня», журнал «Vogue»; АШАН Украина; клиника ISIDA; фарм-компания «ПРО-ФАРМА»; Сбербанк Казахстан. 
+					<br>
+					Выступал с докладами: Кейс-конференция Experts Day, онлайн-конференции Email Day, SMM Day, PPC Day. Докладчих на семинарах: "SMM-Start" от I-marketing.ua, семинар от ПриватБанка в программе "Країна успішного бізнесу", семинар "Формула сайту" Ауспекс CRM, конференция "ESTET BEAUTY EXPO 2016" и масса бесплатных семинаров и вебинаров.
+				</p>
+			</div>
+			<div class="container info_block">
+				<div class="foto_block">
+					<img style="	width: 275px;	
+						height: 325px;
+						margin-right: 50px;
+						//box-shadow: 0px 0px 35px 0px #fff;	
+						//border-radius: 50%;
+					" src="img/spiker/legenchyk.jpg" alt="#">
+					<p style="font-style: italic;"><b style="font-size: 24px;">Иван Легенчук</b> <br>
+					Тема: <b >«Свой салон красоты»</b> <br>
+					- 2 урока <br>
+					- Личные рекомендации
+					</p>
+				</div>
+				<p>
+					Опыт построения ряда бизнес проектов в «с нуля» <br> <br>
+					В бизнесе с 2012г. <br> <br>
+					В бизнесе индустрии красоты с 2013г. <br> <br>
+					Основатель национальной сети салонов красоты «Перукарня №1» <br> <br>
+					Основать торговой компании по продаже солнцезащитных очков «Пара Окулярів» <br> <br>
+					Внедрение собственных практичных инструментов в организацию и технологию продвижения структурного сетевого бизнеса
+
+				</p>
+			</div>
+			<div class="container info_block">
+				<div class="foto_block">
+					<img style="	width: 275px;	
+						height: 375px;
+						margin-right: 50px;
+						//box-shadow: 0px 0px 35px 0px #fff;	
+						//border-radius: 50%;
+					" src="img/spiker/okis.jpg" alt="#">
+					<p style="font-style: italic;"><b style="font-size: 24px;">Ксения Окис</b> <br>
+					Тема: <b >«Сложная архитектура бровей»</b> <br>
+					- Мастер класс <br>
+					- Теоретическое занятие
+					</p>
+
+				</div>
+				<p>
+					Официальный представитель Академии Дизайна Взгляда Lash&Brow Киев, Украина. <br>
+					Мастер-эксперт национального уровня Brow Artist в Украине. <br>
+					Организатор первого международного конгресса «World brow 2016» Киев. Победитель в номинации: «Beauty expert года» по версии международного журнала ANTVAN. 2 место премии Top 10 Stella International Awards в номинации Brow Artist. 
+					Организатор второго и четвёртого международного конгресса и чемпионата «B.E. Brow Expert» Киев 2017 и 2018 года. <br>
+					Руководитель студии дизайна взгляда Brow Bar Ok. 
+					Докладчик международных и всеукраинских форумов и конгрессов по оформлению бровей. <br> 
+					Судья всеукраинских и международных чемпионатов по оформлению, реконструкции и микроблейдингу бровей.
+					<br>
+				</p>
+			</div>
+			<div class="container info_block">
+				<div class="foto_block">
+
+					<img style="	width: 275px;	
+						height: 325px;
+						margin-right: 50px;
+						//box-shadow: 0px 0px 35px 0px #fff;	
+						//border-radius: 50%;
+					" src="img/spiker/amrosieva.png" alt="#">
+					<p style="font-style: italic;"><b style="font-size: 24px;">Ирина Амросиева</b> <br>
+					Тема: <b >«Ногтевой сервис как спец услуга»</b> <br>
+					- Мастер класс <br>
+					- Теоретическое занятие
+					</p>
+				</div>
+				<p>
+					Вице-Чемпион Мира-2007, судья Чемпионатов Мира Чикаго-2008, Париж-2010, Милан-2011, 2012. Франкфурт-2014. Чемпионатов Европы Афины-2009 и Кубок Кремля -2010, Москва-2013. национальный судья Украины, судья национальных чемпионатов России и Израиля, мастер-эксперт КССК (Комитета Стандартов Салонов Красоты) Украины. В номинации Beauty Stella Awords  InterCharm - 2017  Лучший мастер ногтевой эстетики по специализации моделирование ногтей - преподаватель. <br>
+					Руководитель и преподаватель Учебного Центра «Академия маникюра Ирины Амросиевой» и Amro Nail Academy. <br>
+					Автор технологий нейл-дизайнов. <br>
+					Разработчик материалов собственной торговой марки Amro TM, <br>
+					Учредитель Всеукраинского профессионального журнала  «Искусство маникюра».
+
+				</p>
+			</div>
+			<div class="container info_block">
+				<div class="foto_block">
+					
+					<img style="	width: 275px;	
+						height: 375px;
+						margin-right: 50px;
+						//box-shadow: 0px 0px 35px 0px #fff;	
+						//border-radius: 50%;
+					" src="img/spiker/homaykova.jpg" alt="#">
+					<p style="font-style: italic;"><b style="font-size: 24px;">Ирина Хомякова
+					</b> <br>
+					Тема: <b >Make-Up»</b> <br>
+					- Мастер класс <br>
+					- Теоретическое занятие
+					</p>
+				</div>
+				<p>
+					Образование: <br>
+						- Академия макияжа Illamasqua (Лондон) <br>
+						- ITM Институт Техники Макияжа (Париж) <br>
+						- Школа макияжа FLUEREMON (Париж) <br>
+						- Академия макияжа MAKE UP FOREVER (Париж) <br>
+						- Тренинги историка моды Александра Васильева   <br>
+						- Стажировка в Лондонском колледже моды (Лондон) London College of Fashion (курс Promoutional Make up)   <br> 
+						- Bogomolov Image School  <br>  
+						Мастер - классы: Alex Box, James Vincent, John Henessy, Andrew Gallimore, Einat Dan, Roberto Antimi    <br>
+					Проекты:  <br>
+					Визажист куратор на показах UFW, визажист куратор Tbilisi Fashion Week, автор идеи календаря INGLOT International и главный визажист для календаря 2013- 2018, автор уникального бьюти-паспорта, визуалы для магазинов INGLOT international. Визажист куратор Tbilisi Fashion Week. Визажист куратор  Welcome to Georgia! National Tourism Awards.  Стилист, спикер проекта Beauty Vision Make Up Trend Show. Календарь Мисс Украина 2017 <br>
+					Сотрудничество с журналами «Viva», «Макияж», «Ok! magazine Georgia», «Жінка», «Honeymoon» . Ведущая бьюти рубрик на телевидении. Ведущая авторских мастер классов в Украине, Грузии, Англии. Визажист селебрити. <br>
+					Работа с дизайнерами:  <br>
+					Zalevsky, Frolov, MARCHI, Polina Veller, Dubin, Aysina, Vorozhbit Zemskova, Nadya Dzyak, Gosha Altshuler, Katerina Rutman, Duma, Ostel. Lukashyk, Motrya, Artem Klimchuk, Anna Yakovenko, Sayya, Hayk Avanesyan, Flower chic, Oksana Pravnyk. <br>
+					Создание стиля и макияжа для компейнов:
+					FELLINI, SARANA, INGLOT, ZARINA <br>
+					Фото и видео контент для косметического американского косметического бренда Every Day Minerals
+				</p>
+			</div>
+		</div>
+		<div class="button">
+			<li class="vizov">
+				<a>Записаться на курс</a>
+			</li>
+		</div>
+	</div> 
+	<div class="container section_five">
+		<h2>ФОРМАТ КУРСА</h2>
+
+		<div class="container course_block">
+			<div class="img_circle">
+				<img src="img/calendar-alt.svg" alt="#">
+			</div>	
+				<b>Даты проведения курса <br>
+					Курс пройдет с <b style="margin-left: 0;color:#B2000C;">с 12 июля по 18 августа</b> 2018 года.
+				</b>
+
+		</div>
+		<div class="container course_block">
+			<div class="img_circle">
+				<img src="img/check-square (1).svg" alt="#">
+			</div>
+			<b>Занятия <br>
+				Курс состоит из <b style="margin-left: 0;color:#B2000C;">16 занятий</b>. Каждое занятие длится <b style="margin-left: 0;color:#B2000C;">1,5 часа</b>. Перечень занятий смотрите ниже в блоке "Программа курса".
+
+			</b>
+		</div>
+		<div class="container course_block">
+			<div class="img_circle">
+				<img src="img/search-plus.svg" alt="#">
+			</div>
+			<b>Формат <br>
+				Все занятия проходят <b style="margin-left: 0;color:#B2000C;">онлайн</b>. В день старта курса вам на почту <b style="margin-left: 0;color:#B2000C;">придет ссылка с доступом в личный кабинет</b>.
+				Если у вас не получится присутствовать во время прямой трансляции, ссылка на урок <b style="margin-left: 0;color:#B2000C;">будет доступна еще год</b>.
+				Вам будет необходимо выполнять домашнее задание и внедрять на практике новые инструменты для закрепления результата.
+
+			</b>
+		</div>
+		<div class="container course_block">
+			<div class="img_circle">
+				<img src="img/comments.svg" alt="#">
+			</div>	
+			<b>Коммуникация<br>
+				Во время занятий вы <b style="margin-left: 0;color:#B2000C;">сможете задавать вопросы преподавателю</b> в специальном онлайн-чате. Также вы получите доступ к чату группы курса, где сможете обсуждать занятия с преподавателем и другими участниками, получать дополнительные материалы etc.
+			</b>
+		</div>
+		<div class="container course_block">
+			<div class="img_circle">
+				<img src="img/address-card.svg" alt="#">
+			</div>	
+			<b>Сертификаты<br>
+				Много кто спрашивает за  <b style="margin-left: 0;color:#B2000C;">сертификаты</b>. Да, после окончания курса Вам будет выслан на вашу почту Электронный сертификат.
+			</b>
+		</div>
+		<div class="container course_block">
+			<div class="img_circle">
+				<img src="img/phone-volume.svg" alt="#">
+			</div>
+			<b>Цена<br>
+				После оформления заявки <b style="margin-left: 0;color:#B2000C;">с вами свяжется наш менеджер</b> и уточнит актуальную на данный момент цену курса, а также <b style="margin-left: 0;color:#B2000C;">расскажет о специальных корпоративных условиях</b>.
+			</b>
+		</div>
+	</div>
+		<div class="button">
+			<li class="vizov">
+				<a>Записаться на курс</a>
+			</li>
+		</div>
+	<div class="container section_eight">
+		<h2>ДЛЯ КОГО ЭТОТ КУРС?</h2>
+		<div class="row">
+			<div class="col-lg-6 col-sm-6 col-md-6">
+				<div class="eight_block">
+					<img src="img/section_eight/qq.png" alt="">
+					<p>Для мастеров Beauty-Бизнеса на дому, которые хотят раскрутить свой бизнес на новый уровень
+					</p>
+				</div>
+				<div class="eight_block">
+					<img src="img/section_eight/ww.png" alt="">
+					<p>Для тех, кто хочет открыть свой салон красоты и зарабатывать больше
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-md-6">
+				<div class="eight_block">
+					<img src="img/section_eight/ee.png" alt="">
+					<p>Для тех, кто хочет масштабировать свой салон в сеть салонов по городу или стране
+					</p>
+				</div>
+				<div class="eight_block">
+					<img src="img/section_eight/rr.png" alt="">
+					<p>Для основателей, директоров и администраторов салонов красоты, которые хотят развиваться
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- <div class="button">
+			<li class="vizov">
+				<a>Записаться на курс</a>
+			</li>
+		</div> -->
+	
+	<div class="container baner"></div>
+	<div class="container section_six">
+		<h2>ПРОГРАММА КУРСА</h2>
+		<li class="open">
+		<a class="show_hide" rel="#slidingDiv" href="#">1 часть. Продвижение онлайн </a><a class="show_hide" rel="#slidingDiv" href="#"><i style="color:yellow;" class="fa fa-plus"></i></a></li>
+		<ul id="slidingDiv">
+			<li>1. Комплексное продвижение Beauty-Бизнеса в интернете <br>
+			</li>
+			<li>2. Продвижение Beauty-Бизнеса в социальных сетях</li>
+			<li>3. Построение контент стратегии</li>
+			<li>4. Запуск и управление рекламными кампниями</li>
+		</ul>
+		<li class="open">
+		<a class="show_hide" rel="#slidingDiv2" href="">2 часть. Организация салона </a><a class="show_hide" rel="#slidingDiv2" href=""><i style="color:yellow;" class="fa fa-plus"></i></a></li>
+		<ul id="slidingDiv2">
+			<li>1. Поиск места, наружная реклама, маркетинг
+			</li>
+			<li>2. Оборудование салона
+			</li>
+			<li>3. Поиск персонала
+			</li>
+			<li>4. Организация процессов
+			</li>
+		</ul>
+		<li class="open">
+		<a class="show_hide" rel="#slidingDiv3" href="">3 часть. Построение бизнес процессов</a><a class="show_hide" rel="#slidingDiv3" href=""><i style="color:yellow;" class="fa fa-plus"></i></a></li>
+		<ul id="slidingDiv3" >
+			<li>1. Варианты и направления развития как мастера</li>
+			<li>2. Юридические аспекты в Бюти индустрии</li>
+			<li>3. Как открыть школу Beauty-Бизнеса</li>
+			<li>4. Примеры реального построения Beauty-бизнеса</li>
+		</ul>
+		<li class="open">
+		<a class="show_hide" rel="#slidingDiv4" href="">4 часть. Повышение квалификации</a><a class="show_hide" rel="#slidingDiv4" href=""><i style="color:yellow;" class="fa fa-plus"></i></a></li>
+		<ul id="slidingDiv4" >
+			<li>1. Ногтевой сервис</li>
+			<li>2. Make-Up – «3и способа создания идеальной кожи»</li>
+			<li>3. Lash&Brow - «Сложная архитектура Бровей»</li>
+			<li>4. Общение с экспертами</li>
+		</ul>
+		<div class="button">
+			<li class="vizov">
+				<a>Записаться на курс</a>
+			</li>
+		</div>
+	</div>
+	<div class="container baner1"></div>
+	<div class="container section_seven">
+		<h2>ПОСЛЕ ПРОХОЖДЕНИЯ КУРСА:</h2>
+		<div class="row">
+			<div class="col-lg-6 col-sm-6 col-md-6">
+				<div class="seven_block">
+					<img src="img/section_seven/qq.png" alt="">
+					<p>Научитесь быстро и эфективно управлять контентом в соц сетях
+					</p>
+				</div>
+				<div class="seven_block">
+					<img src="img/section_seven/ww.png" alt="">
+					<p>Получите новый виток развития и будете зарабатывать больше
+					</p>
+				</div>
+				<div class="seven_block">
+					<img src="img/section_seven/yy.png" alt="">
+					<p>Повысите свою квалификацию в трех направлениях: ногтевой сервис, Make UP, Lash&Brow
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-md-6">
+				<div class="seven_block">
+					<img src="img/section_seven/ee.png" alt="">
+					<p>Настроите рекламу вашего бизнеса в онлайне
+					</p>
+				</div>
+				<div class="seven_block">
+					<img src="img/section_seven/rr.png" alt="">
+					<p>Сможете легко организовать успешный салон красоты или школу красоты
+					</p>
+				</div>
+				<div class="seven_block">
+					<img src="img/section_seven/tt.png" alt="">
+					<p>Поймете, как привлечь инвестиции для раскрутки
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="container-fluid serf">
+		<h2>Сертификаты</h2>
+		<div class="row">
+			<div class="col-sm-6 col-md-5 col-lg-6">
+				<a class="fancyimage" data-fancybox-group="group" href="img/serf1.png"><img src="img/serf1.png" alt="#"></a>
+				<h4>Повышение квалификации</h4>
+			</div>
+			<div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 offset-lg-0">
+				<a class="fancyimage" data-fancybox-group="group" href="img/serf2.png"><img src="img/serf2.png" alt="#"></a>
+				<h4>Продвижение</h4>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid section_nine">
+			<div class="row">
+				<div class="nine_block col-lg-2 offset-lg-2">
+					<p>Стань подписчиком на <br> <b style="font-size: 22px;color: #2919CF;">FACEBOOK</b></p>
+		
+					<li style="background: #2919CF; box-shadow: 3px 7px 37px 4px #4897D0;"><a href="https://www.facebook.com/%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F-Beauty-%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0-936237886557777/">Подписаться</a></li>
+				</div>
+				<div class="nine_block col-lg-2 offset-lg-1">
+					<p>Стань подписчиком на <br> <b style="font-size: 22px;color: #BD3381;">INSTAGRAM</b></p>
+					<li style="background: linear-gradient(to right, #BD3381, #CD2F7B); box-shadow: 3px 7px 37px 4px #BD3381;"><a href="https://www.instagram.com/beautybusiness_academy/">Подписаться</a></li>
+				</div>
+				<div class="nine_block1 col-lg-2 offset-lg-1">
+					<a href="tel:+380965084030" ><i style="color: #000; margin-right: 5px;" class="fa fa-phone"></i>+380965084030</a><br>
+					<a href="tel:+380950374122"><i style="color: #000; margin-right: 5px;" class="fa fa-phone"></i>+380950374122</a><br>
+					<a href="mailto:vs.kurson@gmail.com"><i style="color: #000; margin-right: 5px;" class="fa fa-envelope"></i>vs.kurson@gmail.com</a>
+
+				</div>
+			</div>
+	</div>
+	<div class="ModalWindow " id="ModalWindow">
+		<a class="close" id="close">X</a>
+
+		<form method="post" action="" id="formMain" name="formMain" >
+			<h2>Оставьте ваши контактные данные и наш менеджер свяжеться с вами </h2>
+			<input id="name" type="text" name="name" placeholder="Ваше имя..." maxlength="30" autocomplete="off" required/>
+			<input id="telephone" type="number" name="telephone"  placeholder="Ваш телефон...." maxlength="30" autocomplete="off" required/>
+			<input id="mail" type="email" name="mail"  placeholder="Ваш Email...." maxlength="30" autocomplete="off" required/>
+			<input id="kod" type="text" name="kod"  placeholder="Кто Вас пригласил??" maxlength="30" autocomplete="off"/>
+			<input id="button" name="send" type="submit" value="Заказать звонок" / >
+		</form>
+	</div>
+	<div id="mask"></div>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/animate-css.js"></script>
+<!--  Global site tag (gtag.js) - Google Analytics --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97480317-5"></script> 
+<script src="bower_components/fancybox-master/dist/jquery.fancybox.min.js"></script>
+<script>
+		$(document).ready(function() { 
+    	$("a.fancyimage").fancybox(); 
+  		});
+</script>
+<script> 
+window.dataLayer = window.dataLayer || []; 
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date()); 
+
+gtag('config', 'UA-97480317-5'); 
+</script>
+<script>
+	$("#fakeloader").fakeLoader({
+
+
+
+            bgColor: '#fff',
+
+
+
+            spinner: 'spinner4'
+
+
+
+        });
+	//ModalWindow
+	$(document).ready(function(){
+	    $( ".vizov" ).click(function() {
+	        $(".ModalWindow").addClass("active");
+	        var maskHeight = $(document).height();
+		    var maskWidth = $(window).width();
+		    $('#mask').css({'width':maskWidth,'height':maskHeight});
+		    $('#mask').fadeIn(1000); 
+    		$('#mask').fadeTo("slow",0.8);
+    		
+	        console.log('lol'); 
+	    });
+	});
+	//close
+	$(document).ready(function(){
+	    $( "#close, #mask" ).click(function() {
+	        $(".ModalWindow").removeClass("active");
+	        $('#mask').hide();
+	        console.log('redy'); 
+	    });
+	});
+	//vkladki
+	var $body = $('body');
+        $body.on('click', '.tabs-header-item', function () {
+            if ($(this).hasClass('active')) return 1;
+            var id = $(this).data('id');
+            $('.tabs-header-item', $(this).closest('.tabs-header')).removeClass('active');
+            $(this).addClass('active');
+            $('.tab', $(this).closest('.tabs-wrap')).removeClass('active');
+            $('.tab[data-id='+ id +']').addClass('active');
+        });
+
+        $body.on('click', '.accordion-item-content li.has-text span', function(){
+            var $item = $(this).closest('li');
+            $item.toggleClass('active');
+            $('.accordion-content', $item).stop().slideToggle(300);
+        });
+
+        $body.on('click', '.accordion-list > li .main-title-plus, .accordion-list > li > span', function(){
+            if ($(this).closest('.accordion-list').find('> li').length === 1) {
+                return;
+            }
+            var $item = $(this).closest('li');
+            $item.toggleClass('active');
+            $('.accordion-item-content', $item).stop().slideToggle(300);
+        });
+
+        if ($('.accordion-list > li').length == 1) {
+            $('.accordion-list > li > .main-title-plus').hide();
+        }
+
+
+</script>
+<script>
+    function AjaxFormRequest(result_id,formMain,url) {
+                jQuery.ajax({
+                    url:     url,
+                    type:     "POST",
+                    dataType: "html",
+                    data: jQuery("#"+formMain).serialize(), 
+                    success: function(response) {
+                    document.getElementById(result_id).innerHTML = response;
+                },
+                error: function(response) {
+                document.getElementById(result_id).innerHTML = "<p>Возникла ошибка при отправке формы. Попробуйте еще раз</p>";
+                }
+             });
+                
+
+             $(':input','#formMain')
+ 				.not(':button, :submit, :reset, :hidden')
+ 				.val('')
+ 				.removeAttr('checked')
+ 				.removeAttr('selected');
+    }
+</script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+</body>
+</html>
+
