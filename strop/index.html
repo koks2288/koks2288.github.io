@@ -1,5 +1,645 @@
-<?php
-	require('system/header.php');
-	require('system/foother.php')
-?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+	<titleСтропмаркет.РФ</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/fancybox/fancybox.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/fonts/MinionPro-Bold.otf">
+	<link rel="stylesheet" type="text/css" href="http://mnogoblog.ru/wp-content/uploads/2013/12/zamok2.html">
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="adaptiv.css">
 	
+
+    
+</head>
+<body>
+<section>
+<div class="container-fluid fon1">
+	<div class="row">
+		<div class="container-fluid header navbar navbar-fixed-top">
+			<div class="row">
+				<div class="col-lg-3 logo"><a href="">Стропмаркет.РФ</a></div>
+				<div class="col-lg-6 nav   navbar-collapse">
+					<ul>
+						<li><a class="go" href="#strop"><p>Стропы</p></a></li>
+						<li><a class="go" href="#kanat"><p>Канаты</p></a></li>
+						<li><a class="go" href="#takelag"><p>Такелажи</p></a></li>
+						<li><a class="go" href="#stag"><p>Стяжки</p></a></li>
+						<li><a class="go" href="#verevka"><p>Веревки </p></a></li>
+						<li><a class="go" href="#zah"><p>Захваты</p></a></li>
+						<li><a class="go" href="#trav"><p>Траверсы</p></a></li>
+					</ul>
+					
+				</div>
+				<div class="col-lg-3 nomber">
+					<a onclick="yaCounter35667852.reachGoal('Zakaz_zvonka'); return true;"  href="tel:89189070305">8(918)9070305</a>
+
+					<!--<a onclick="yaCounter35667852.reachGoal('Zakaz_zvonka'); return true;" href="#openModal"><span class="glyphicon glyphicon-earphone"></span></a>-->
+					<!--<a onclick="yaCounter35667852.reachGoal('Zakaz_zvonka'); return true;"  href="tel:8-800-987-54">8-800-987-54</a>-->			
+				</div>
+			</div>
+		</div>
+		<div class="container page-scrol" id="form" >
+			<div class="row">
+				<div class="col-xs-6 animater baner">
+					<h2>Грузоподъемное оборудование от производителя согласно РД и ГОСТ</h2>
+					<hr class="primary">
+					<p>Скидка 5% до конца недели</p>
+					<a href="#openModal"><h3><b>Успей заказать!</b></h3></a>
+				</div>
+				<div class="col-xs-6 animater1 forma">
+					<h2>Отправьте заявку</h2>
+					<p>и мы свяжемся с вами</p>
+					<?
+						if (isset ($_POST['messageFF'])) {
+						  mail ("	
+2892684@mail.ru, portosdark@yandex.ru",
+						        "stropmarket.rf",
+						        "\nNomber: ".$_POST['messageFF']);
+						  echo ('<p style="color: green">Ваше сообщение получено, спасибо!</p>');
+						}
+					?>
+
+					<form  method="POST">
+						<input type="text" name="messageFF" required placeholder="Оставьте телефон" x-autocompletetype="name"></input>
+						<input onsubmit="yaCounter35667852.reachGoal('form'); return true;" type="submit" name="zakq"  value="Отправить" >
+
+        
+					</form>
+					<br>
+					<br>
+
+					<span class="glyphicon glyphicon-lock"></span>
+					<p class="m">ВАШИ ДАННЫЕ В БЕЗОПАСНОСТИ</p>
+				</div>
+				
+
+
+<div id="openModal" class="modalDialog">
+
+    <div class="forma1">
+
+        <a href="#close" title="Закрыть" class="close">X</a>
+
+        			<h2>Отправьте заявку</h2>
+					<p>и мы свяжемся с вами</p>
+
+					<form  method="POST">
+						<input type="text" name="messageFF" required placeholder="Оставьте телефон" x-autocompletetype="name"></input>
+						<input onsubmit="yaCounter35667852.reachGoal('form'); return true;" type="submit" name="zakq"  value="Отправить" >
+					<br>
+					
+					<br>
+					<span class="glyphicon glyphicon-lock"></span>
+					<p class="m">ВАШИ ДАННЫЕ В БЕЗОПАСНОСТИ</p>
+					</form>
+	</div>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+</section>
+	<section>
+		<div class="container-fluid page-scrol fon2" id="strop">
+			<div class="row ">
+				<div class="container">
+				<div class="row  fon-slide">
+					<div class='carousel slide' data-ride='carousel' id='carousel-example' data-interval="140000">
+						<ol class='carousel-indicators'>
+    	<li data-target='#carousel-example' data-slide-to='0' class='active'></li>
+        <li data-target='#carousel-example' data-slide-to='1'></li>
+        <li data-target='#carousel-example' data-slide-to='2'></li>
+        <li data-target='#carousel-example' data-slide-to='3'></li>
+        <li data-target='#carousel-example' data-slide-to='4'></li>
+        <li data-target='#carousel-example' data-slide-to='5'></li>
+        <li data-target='#carousel-example' data-slide-to='6'></li>
+        <li data-target='#carousel-example' data-slide-to='7'></li>
+    </ol>
+
+					    
+					    <div class='carousel-inner'>
+					    	<div class='item active'>
+					        	<img src='img/1231.png' alt='Slide'>
+					        
+					        <div class='carousel-caption'>
+					        	<h3>Стропы всех видов</h3>
+					            <p>канаты четерехветвевые, канаты петлевые, грузовые цепные, текстильные, <br>фал капроновый</p>
+					            <a onclick="yaCounter35667852.reachGoal('Zakaz_zvonka'); return true;" class="zak" href="#openModal">Заказать</a>
+					         </div>       
+					            
+					        </div>
+					        <div class='item'>
+					        	<img src='img/stt/1.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/stt/2.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/stt/3.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/stt/4.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/stt/5.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/stt/6.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/stt/7.jpg' alt='Slide'>
+					        </div>
+					    </div>
+					    	<a href='#carousel-example' class='left carousel-control' data-slide='prev'>
+					    	<span class='glyphicon glyphicon-chevron-left'></span>
+					  	    </a>
+					        <a href='#carousel-example' class='right carousel-control' data-slide='next'>
+					    	<span class='glyphicon glyphicon-chevron-right'></span>
+					    	</a>
+					    
+					</div>
+				</div>							
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<section>
+		<div class="container-fluid page-scrol fon4" id="kanat">
+		    <div class="row">
+		    	<div class="container">
+				<div class="row fon-slide">
+					<div class='carousel slide' data-ride='carousel' id='carousel-example1' data-interval="1400000">
+						<ol class='carousel-indicators'>
+    	<li data-target='#carousel-example' data-slide-to='0' class='active'></li>
+        <li data-target='#carousel-example' data-slide-to='1'></li>
+        <li data-target='#carousel-example' data-slide-to='2'></li>
+        <li data-target='#carousel-example' data-slide-to='3'></li>
+        <li data-target='#carousel-example' data-slide-to='4'></li>
+        <li data-target='#carousel-example' data-slide-to='5'></li>
+        
+    </ol>
+					    
+					    <div class='carousel-inner'>
+					    	<div class='item active'>
+					        	<img src='img/500_1328821802.jpg' alt='Slide'>
+					        
+					        <div class='carousel-caption'>
+					        	<h3>Канаты стальные</h3>
+					            <p>любые сечения и плетения</p>
+					            <a onclick="yaCounter35667852.reachGoal('Zakaz_zvonka'); return true;" class="zak" href="#openModal">Заказать</a>
+					         </div>       
+					            
+					        </div>
+					        <div class='item'>
+					        	<img src='img/kan/2.jpg' alt='Slide'>
+					        </div>
+					       
+					        <div class='item'>
+					        	<img src='img/kan/4.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/kan/5.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/kan/6.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/kan/7.jpg' alt='Slide'>
+					        </div>
+					        
+					    </div>
+					    	<a href='#carousel-example1' class='left carousel-control' data-slide='prev'>
+					    	<span class='glyphicon glyphicon-chevron-left'></span>
+					  	    </a>
+					        <a href='#carousel-example1' class='right carousel-control' data-slide='next'>
+					    	<span class='glyphicon glyphicon-chevron-right'></span>
+					    	</a>
+					    
+					</div>
+				</div>							
+				</div>
+			</div>
+		</div>
+	</section>
+		<div class="container-fluid page-scrol fon2" id="takelag">
+		    <div class="row">
+		    	<div class="container">
+				<div class="row fon-slide">
+					<div class='carousel slide' data-ride='carousel' id='carousel-example3' data-interval="140000">
+						<ol class='carousel-indicators'>
+    	<li data-target='#carousel-example' data-slide-to='0' class='active'></li>
+        <li data-target='#carousel-example' data-slide-to='1'></li>
+        <li data-target='#carousel-example' data-slide-to='2'></li>
+        <li data-target='#carousel-example' data-slide-to='3'></li>
+        <li data-target='#carousel-example' data-slide-to='4'></li>
+        
+    </ol>
+					    
+					    <div class='carousel-inner'>
+					    	<div class='item active'>
+					        	<img src='img/takelaz-002.jpg' alt='Slide'>
+					        
+					        <div class='carousel-caption'>
+					        	<h3>Такелажи</h3>
+					            <p>стоячие и бегучие</p>
+					            <a onclick="yaCounter35667852.reachGoal('Zakaz_zvonka'); return true;" class="zak" href="#openModal">Заказать</a>
+					         </div>       
+					            
+					        </div>
+					        <div class='item'>
+					        	<img src='img/tk/13.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/tk/14.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/tk/15.jpg' alt='Slide'>
+					        </div>
+					    </div>
+					    	<a href='#carousel-example3' class='left carousel-control' data-slide='prev'>
+					    	<span class='glyphicon glyphicon-chevron-left'></span>
+					  	    </a>
+					        <a href='#carousel-example3' class='right carousel-control' data-slide='next'>
+					    	<span class='glyphicon glyphicon-chevron-right'></span>
+					    	</a>
+					    
+					</div>
+				</div>							
+				</div>
+			
+			</div>
+    
+
+
+	    </div>
+	
+		<div class="container-fluid page-scrol fon2" id="stag">
+		    <div class="row">
+		    	<div class="container">
+				<div class="row fon-slide">
+					<div class='carousel slide' data-ride='carousel' id='carousel-example4' data-interval="1400000">
+						<ol class='carousel-indicators'>
+    	<li data-target='#carousel-example' data-slide-to='0' class='active'></li>
+        <li data-target='#carousel-example' data-slide-to='1'></li>
+        <li data-target='#carousel-example' data-slide-to='2'></li>
+        <li data-target='#carousel-example' data-slide-to='3'></li>
+        <li data-target='#carousel-example' data-slide-to='4'></li>
+        <li data-target='#carousel-example' data-slide-to='5'></li>
+        
+    </ol>
+					    
+					    <div class='carousel-inner'>
+					    	<div class='item active'>
+					        	<img src='img/retchetz11.jpg' alt='Slide'>
+					        
+					        <div class='carousel-caption'>
+					        	<h3>Стяжные системы</h3>
+					            <p>однокомпонентные и двухкомпонентные</p>
+					            <a onclick="yaCounter35667852.reachGoal('Zakaz_zvonka'); return true;" class="zak" href="#openModal">Заказать</a>
+					         </div>       
+					            
+					        </div>
+					        <div class='item'>
+					        	<img src='img/st/16.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/st/17.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/st/400044.png' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/st/st_1.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/st/stajz.png' alt='Slide'>
+					        </div>
+					        
+					    </div>
+					    	<a href='#carousel-example4' class='left carousel-control' data-slide='prev'>
+					    	<span class='glyphicon glyphicon-chevron-left'></span>
+					  	    </a>
+					        <a href='#carousel-example4' class='right carousel-control' data-slide='next'>
+					    	<span class='glyphicon glyphicon-chevron-right'></span>
+					    	</a>
+					    
+					</div>
+				</div>							
+				</div>
+			
+			</div>
+    
+
+
+	    </div>
+		   
+
+	
+	
+
+
+	<section>
+		<div class="container-fluid page-scrol fon5" id="verevka">
+			<div class="row">
+				<div class="container">
+				<div class="row fon-slide">
+					<div class='carousel slide' data-ride='carousel' id='carousel-example5' data-interval="1400000">
+						<ol class='carousel-indicators'>
+    	<li data-target='#carousel-example' data-slide-to='0' class='active'></li>
+        <li data-target='#carousel-example' data-slide-to='1'></li>
+        <li data-target='#carousel-example' data-slide-to='2'></li>
+        <li data-target='#carousel-example' data-slide-to='3'></li>
+        <li data-target='#carousel-example' data-slide-to='4'></li>
+        
+    </ol>
+					    
+					    <div class='carousel-inner'>
+					    	<div class='item active'>
+					        	<img src='img/22365.jpg' alt='Slide'>
+					        
+					        <div class='carousel-caption'>
+					        	<h3>Веревки и канаты пеньковые</h3>
+					            <p>полиамидные, полипропиленовые, сизалевый, джутовый </p>
+					            <a onclick="yaCounter35667852.reachGoal('Zakaz_zvonka'); return true;" class="zak" href="#openModal">Заказать</a>
+					         </div>       
+					            
+					        </div>
+					        <div class='item'>
+					        	<img src='img/vr/1.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/vr/2.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/vr/3.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/vr/4.png' alt='Slide'>
+					        </div>
+					        
+					        
+					    </div>
+					    	<a href='#carousel-example5' class='left carousel-control' data-slide='prev'>
+					    	<span class='glyphicon glyphicon-chevron-left'></span>
+					  	    </a>
+					        <a href='#carousel-example5' class='right carousel-control' data-slide='next'>
+					    	<span class='glyphicon glyphicon-chevron-right'></span>
+					    	</a>
+					    
+					</div>
+				</div>							
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section>
+		<div class="container-fluid page-scrol fon7" id="zah">
+			<div class="row">
+				<div class="container">
+				<div class="row fon-slide">
+					<div class='carousel slide' data-ride='carousel' id='carousel-example7' data-interval="1400000">
+						<ol class='carousel-indicators'>
+    	<li data-target='#carousel-example' data-slide-to='0' class='active'></li>
+        <li data-target='#carousel-example' data-slide-to='1'></li>
+        <li data-target='#carousel-example' data-slide-to='2'></li>
+        <li data-target='#carousel-example' data-slide-to='3'></li>
+        <li data-target='#carousel-example' data-slide-to='4'></li>
+        
+    </ol>
+					    
+					    <div class='carousel-inner'>
+					    	<div class='item active'>
+					        	<img src='img/z2.png' alt='Slide'>
+					        
+					        <div class='carousel-caption nol'>
+					        	<h3>Захват для горизонтального подьёма тонкого листа</h3>
+					            <p>захваты всех типов</p>
+					            <a onclick="yaCounter35667852.reachGoal('Zakaz_zvonka'); return true;" class="zak" href="#openModal">Заказать</a>
+					         </div>       
+					            
+					        </div>
+					        <div class='item'>
+					        	<img src='img/zah/z1.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/zah/z3.jpg' alt='Slide'>
+					        </div>
+					        
+					        
+					        
+					    </div>
+					    	<a href='#carousel-example7' class='left carousel-control' data-slide='prev'>
+					    	<span class='glyphicon glyphicon-chevron-left'></span>
+					  	    </a>
+					        <a href='#carousel-example7' class='right carousel-control' data-slide='next'>
+					    	<span class='glyphicon glyphicon-chevron-right'></span>
+					    	</a>
+					    
+					</div>
+				</div>							
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<sectiot>
+		<div class="container-fluid page-scrol fon8" id="trav">
+			<div class="row">
+				<div class="container">
+				<div class="row fon-slide">
+					<div class='carousel slide' data-ride='carousel' id='carousel-example8' data-interval="1400000">
+						<ol class='carousel-indicators'>
+    	<li data-target='#carousel-example' data-slide-to='0' class='active'></li>
+        <li data-target='#carousel-example' data-slide-to='1'></li>
+        <li data-target='#carousel-example' data-slide-to='2'></li>
+        <li data-target='#carousel-example' data-slide-to='3'></li>
+        <li data-target='#carousel-example' data-slide-to='4'></li>
+        
+    </ol>
+					    
+					    <div class='carousel-inner'>
+					    	<div class='item active '>
+					        	<img src='img/trav/tr2.png' alt='Slide'>
+					        
+					        <div class='carousel-caption nol1'>
+					        	<h3>Траверсы грузоподъемные</h3>
+					            <p>предназначена для подъема, удержания в поднятом положении и опускания груза при различных работах в режиме не выше группы режима 1М по ГОСТ 2583583</p>
+					            <a onclick="yaCounter35667852.reachGoal('Zakaz_zvonka'); return true;" class="zak" href="#openModal">Заказать</a>
+					         </div>       
+					            
+					        </div>
+					        <div class='item'>
+					        	<img src='img/trav/tr1.jpg' alt='Slide'>
+					        </div>
+					        <div class='item'>
+					        	<img src='img/trav/tr3.jpg' alt='Slide'>
+					        </div>
+					        
+					        
+					    </div>
+					    	<a href='#carousel-example8' class='left carousel-control' data-slide='prev'>
+					    	<span class='glyphicon glyphicon-chevron-left'></span>
+					  	    </a>
+					        <a href='#carousel-example8' class='right carousel-control' data-slide='next'>
+					    	<span class='glyphicon glyphicon-chevron-right'></span>
+					    	</a>
+					    
+					</div>
+				</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section>
+		<div class="container-fluid fon6">
+			<div class="row"> 
+					
+					<img class="animater2" src="img/logol.png">
+				<div class="container l">
+					<center><h2>Мы потому что:</h2></center>
+					<h4>1.Изготавливаем согласно ГОСТ и РД</h4>
+					<h4>2.Разрешительная документация на изготовление грузоподъемного оборудования</h4>
+					<h4>3.Сжатые сроки изготовления и доставки до заказчика</h4>
+					<h4>4.Наша продукция отлично зарекомендовала себя при Олимпийском строительстве в г. Сочи и в настоящее время при строительстве Керченского моста.</h4>
+					
+					<br>
+				
+					<h2>Еще есть сомнения???</h2>
+				
+					<br>
+				
+					<h3>Мы развеем их или вы, получите дополнительную скидку</h3>
+					
+				</div>
+				<div class="container">
+				<a onclick="yaCounter35667852.reachGoal('Zakaz_zvonka'); return true;" class="knopka animater2" href="#openModal">Заказать</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section>
+		<div class="container-fluid map" id="map">
+			<div class="row">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d180454.21898213675!2d38.949853482246915!3d45.033102300000984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04564714535b3%3A0xf720794f56c4beb6!2z0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2sua!4v1456384659637" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+
+
+	</section>
+
+
+
+
+		    <!--Оставьте нам ваш емаил и мы бесплатно вышлем ам схему страховки груза)ВАШИ ДАННЫЕ В БЕЗОПАСНОСТИ
+				<div class="input-1 ico-phone one-from"><input type="text" name="phone" placeholder="Ваш телефон"></div>
+		    -->
+		    	<footer class="footer">
+		<a onclick="yaCounter35667852.reachGoal('Zakaz_zvonka'); return true;" class="navbar-brand" href="http://tntdesign.xyz"><img src="http://webkaniv.in.ua/Application/Public/img/logo.png"/></a>
+		<a onclick="yaCounter35667852.reachGoal('Zakaz_zvonka'); return true;" class="navbar-brand raz" href="http://tntdesign.xyz">TNT DESING</a>
+			
+	</footer>
+
+
+	
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="bower_components/js/animate-css.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	
+	<script src="bower_components/js/waypoints.min.js"></script>
+	<script src='bower_components/fancybox/jquery.fancybox.js'></script>
+	
+
+	<script>
+	 $(document).ready(function() { 
+	    $("a.fancyimage").fancybox(); 
+	  }); 
+	</script>
+
+	<script>
+		$(document).ready(function() {
+		  
+		  $(".animater").animated("fadeInLeft", "zoomOutDown");
+		  $(".fon-slide").animated("fadeInLeft", "zoomOutDown");
+		  $(".animater1").animated("fadeInRight", "fadeOutRight");
+		  $(".animater2").animated("fadeIn", "zoomOutDown");
+		  $(".l h2,h4,h3").animated("fadeInRight", "zoomOutDown");
+		  $(".logo").animated("pulse", "zoomOutDown");
+		  $(".nomber a").animated("fadeInRightBig", "zoomOutDown");
+		  $(".nav a").animated("pulse", "zoomOutDown");
+
+
+
+		});
+	</script>
+	<script>			
+			$(document).ready(function(){
+				$('.go').click(function(){
+					var el = $(this).attr('href');
+					$('body').animate({scrollTop:$(el).offset().top}, 1000);
+				});
+			});
+		</script>
+
+</body>
+<!— Yandex.Metrika counter —> 
+<script type="text/javascript"> 
+(function (d, w, c) { 
+(w[c] = w[c] || []).push(function() { 
+try { 
+w.yaCounter35667852 = new Ya.Metrika({ 
+id:35667852, 
+clickmap:true, 
+trackLinks:true, 
+accurateTrackBounce:true, 
+webvisor:true 
+}); 
+} catch(e) { } 
+}); 
+
+var n = d.getElementsByTagName("script")[0], 
+s = d.createElement("script"), 
+f = function () { n.parentNode.insertBefore(s, n); }; 
+s.type = "text/javascript"; 
+s.async = true; 
+s.src = "https://mc.yandex.ru/metrika/watch.js"; 
+
+if (w.opera == "[object Opera]") { 
+d.addEventListener("DOMContentLoaded", f, false); 
+} else { f(); } 
+})(document, window, "yandex_metrika_callbacks"); 
+</script> 
+<noscript><div><img src="https://mc.yandex.ru/watch/35667852" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+<!— /Yandex.Metrika counter —>
+<!— Google Tag Manager —>
+<script> 
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+
+ga('create', 'UA-74308157-1', 'auto'); 
+ga('send', 'pageview'); 
+
+</script>
+</html>
