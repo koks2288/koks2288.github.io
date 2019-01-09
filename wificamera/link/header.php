@@ -49,7 +49,9 @@ echo ("Обязательные поля не заполнены. Введите
 	
 	<link rel="stylesheet" href="/style/style.css">
 	<link rel="stylesheet" href="/style/styleModalWindow.css">
-	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+	 --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
 	<link rel="stylesheet" href="/bower_components/fancybox-master/dist/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 </head>

@@ -19,7 +19,8 @@
 	</div>
 	<script src="/bower_components/jquery/dist/jquery.js"></script>
 	<script src="/js/main.js"></script>
-	<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<!-- <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 	<script src="/bower_components/fancybox-master/dist/jquery.fancybox.min.js"></script>
 <!-- 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
