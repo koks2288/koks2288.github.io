@@ -1,0 +1,173 @@
+@media(min-width:1600px){
+	.fon1{
+		background: url('img/fon/G_1920_700.jpg');
+		height: 700px;
+
+	}
+	.fon2{
+		height: 900px;
+		background: url('img/fon/S5_1920_500.jpg');
+	}
+
+	.fon4{
+		height: 900px;
+		background:  url('img/fon/S4_1920_500.jpg');
+	}
+	.fon5{
+		height: 900px;
+		background:  url('img/fon/S3_1920_500.jpg');
+	}
+	.fon6{
+		height: 700px;
+		background:  url('img/fon/S1_1920_700.jpg');
+		
+	}
+		.fon7{
+			height: 900px;
+			background: url('img/fon/S5_1920_500.jpg');
+		}
+		.nol h3{
+			font-size: 44px !important;
+		}
+		.nol p{
+			font-size: 24px !important;
+		}
+		.nol1 h3{
+			font-size: 44px !important;
+		}
+		.nol1 p{
+			font-size: 24px !important;
+
+		}
+		.fon8{
+			height: 900px;
+			background: url('img/fon/S5_1920_500.jpg');
+		}
+	.fon6 img{
+	
+	margin-left: 1200px;
+	margin-top: 40px;
+	
+}
+	.fon-slide{
+		width: 1675px;
+		height: 100%;
+		margin-left: -260px;
+		display: block;
+		margin-top:75px;
+	}
+	.item img{
+		width: 100%;
+
+	}
+	.nav{
+		margin-left: 300px;
+	}
+	.carousel-caption{
+		margin-left: 325px;
+	margin-bottom: 325px;
+
+	}
+	.carousel-caption h3{
+	font-size:  72px;
+	padding: 15px;
+}
+.carousel-caption p{
+	margin-top: 50px;
+	padding: 15px;
+	font-size:  28px;
+}
+.l{
+	height: 570px;
+}
+.knopka{
+	
+	margin-top: 11px;
+}
+.l h4{
+	font-size: 30px;
+}
+.l h3{
+	margin-top: -15px;
+}
+.footer{
+	background:url('img/fon/elitefon2.jpg');
+	height: 70px;
+}
+.zak{
+
+	height: 75px;
+	width: 400px;
+
+	padding-top: 25px;
+	font-size: 32px;
+
+}
+.nav p{
+	
+	font-size: 24px;
+
+}
+
+}
+/*не работает*/
+@media(max-width: 720px){
+	.logo{
+	font-size: 24px;
+	
+	width: 13%;
+}
+.nav{
+	width: 100%;
+	position: absolute;
+}
+.nomber{
+	
+	width: 20%;
+
+
+}
+	.baner{
+	height: 380px;
+	margin-top: 150px;	
+	opacity: .9;
+
+	width: 33%;
+}
+.baner h2{
+	font-size: 24px;
+}
+.baner p{
+	font-size: 24px;
+	text-align: center;
+}
+.baner h3{
+	font-size: 24px;
+	text-align: center;
+}
+.forma{
+
+	height: 380px;
+	margin-top: 150px;	
+	
+	width: 50%;
+	
+}
+.forma h2{
+	text-align: center;
+}
+
+.forma p{
+	margin-top: -20px;
+	text-align: center;
+	font-size: 24px;
+}
+.carousel-caption{
+	margin-left: 350px;
+	margin-bottom: -50px;
+
+}
+.footer{
+	background:url('img/fon/elitefon2.jpg');
+}
+}

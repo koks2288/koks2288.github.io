@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<style>
+.btn-danger {
+	margin: 40px;
+}
+
+.btn-danger:focus {
+	outline: none;
+}
+
+.message {
+	position: relative;
+	display: none;
+	background: #fff;
+	width: 400px;
+	height: 100px;
+	color: rgba(0,0,0,.55);
+	border: 1px solid rgba(0,0,0,.25);
+	box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+	border-radius: 15px;
+	line-height: 100px;
+	text-align: center;
+	margin: auto;
+	font-size: 20px;
+	z-index: 51;
+}
+</style>
+
+<button class="modalbtn btn btn-danger">Don't Click Me</button>
+
+<div class="message">
+	Hello! I'm an artificial intelligence. Boo!
+</div>
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script>
+function creatOverlay(){
+  var docHeight = $(document).height(); 
+  $("<div id='overlay'></div>")
+  .appendTo("body")
+  .height(docHeight)
+  .css({
+    'opacity': 0.4,
+    'position': 'absolute',
+    'top': 0,
+    'left': 0,
+    'background-color': 'black',
+    'width': '100%',
+    'z-index': 50
+  },1000);	
+	
+	$('.message').fadeIn(1000);	
+	
+	$('#overlay').click(function(){
+		$(this).remove();
+		$('.message').fadeOut();
+	});
+}
+
+$(document).ready(function(){
+	$('.modalbtn').click(creatOverlay);	
+});
+</script>
+</body>
+</html>
+	<script>
+function creatOverlay(){
+  var docHeight = $(document).height(); 
+  $("<div id='overlay'></div>")
+  .appendTo("body")
+  .height(docHeight)
+  .css({
+ 
+    'position': 'absolute',
+    'top': 0,
+    'left': 0,
+    'width': '100%',
+    'z-index': 50
+  });	
+	
+	$('.modalDialog').fadeIn();	
+	
+	$('#overlay').click(function(){
+		$(this).remove();
+		$('.modalDialog').fadeOut();
+	});
+}
+
+$(document).ready(function(){
+	$('.modalbtn').click(creatOverlay);	
+});
+</script>
