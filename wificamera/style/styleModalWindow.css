@@ -1,0 +1,51 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0 ;
+  font-size: 16px;
+  font-family: "RobotoCondensed";
+}
+ul, li{
+  list-style: none;
+}
+body {
+  font-size: 100%;
+  color: #000;
+}
+.modalwindow{
+  background: #777;
+}
+
+
+
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+@media only screen and (min-width: 600px) {
+  
+}
+
+@media only screen and (min-width: 600px) {
+  
+}
+
+@media only screen and (min-width: 1170px) {
+  
+}
