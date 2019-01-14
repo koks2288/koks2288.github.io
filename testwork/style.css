@@ -101,15 +101,22 @@ input[name="focus-panel"]{
 	border-bottom: 1px solid #1e91f7;  
 
 }
+.carousel-item2 {
+	display: flex;
+	justify-content: space-between;
+}
+.carousel-item2 li:first-child{
+	border-left: 1px solid #1e91f7;
+}
 .carousel-item2 li{
 	display: flex;
 	flex-direction: column;
+	border-right: 1px solid #1e91f7;
 }
 .carousel-item img{
 	width: 280px;
 	height: 339px;
 }
-
 .carousel-item2>li>p{
 	color: #315479;
 	margin-bottom: 0;
@@ -125,4 +132,35 @@ input[name="focus-panel"]{
 .carousel-control-next-icon {
 
 	background-image: url("img/Shape3.png") !important;
+}
+
+.text-big-panel{
+	display: flex;
+	flex-direction: column;
+}
+.text-big-panel h2{
+	font-size: 18pt;/*16*/
+	color: #315479;
+	text-align: center;
+	margin-top: 50px;
+}
+.first-article, .second-article{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+.first-article img, .second-article img{
+	width: 500px;
+	height: 400px;
+}
+.first-article h3, .second-article h3{
+	color: #315479;
+	font-size: 16pt;/*12.5*/
+}
+.first-article p, .second-article p{
+	color: #888;
+	font-size: 14pt;/*11*/
 }
