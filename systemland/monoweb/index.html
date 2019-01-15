@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Главная страница</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,800" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="loader.css">
+</head>
+<body>
+   <div id="fakeloader"></div>
+    <nav>
+        <div class="navbar">
+            <a href=""><m>M</m>ono<w>W</w>eb</a>
+            
+            <div class="panel">
+                <a href="#portfolio" href="">Портфолио</a>
+                <a href="#about-us" href="">Про нас</a>
+                <a href="#contacts" href="">Контакты</a>
+            </div>
+        </div>
+        
+        <div class="navbar-content">
+            <left>
+                <big>
+                    Разработка Web сайтов и мобильных приложений
+                </big>
+                
+                <small>
+                    Сайт – это уже не роскошь и не дорогое удовольствие. Сайт сегодня – это необходимость. А все потому, что время не стоит на месте, и прогресс вместе с ним. Трудно представить себе кого-нибудь без компьютера, а уж тем более без Интернета.
+                </small>
+            </left>
+            <right>
+                <img src="111.png" alt="*">
+            </right>
+        </div>
+    </nav>
+    
+    <button class="order">Заказать</button>
+    
+    <main>
+        <div id="about-us" class="about-us">
+            <left>
+                &mdash;&mdash; Кто мы? &mdash;&mdash;
+            </left>
+            
+            <right>
+               <big>
+                   MonoWeb
+               </big>
+                <small>
+                       Мы амбициозная команда, которая уверена в своих силах и успехе.
+                    <br/>
+                    <br/>
+                        Специализируемся на создании сайтов любого уровня сложности и предлагаем полный спектр услуг в этой сфере — от разработки до продвижения в интернете.
+                    <br/>
+                    <br/>
+                         Используем индивидуальный подход к каждому клиенту, что позволяет нам создавать сайты, удовлетворяющие требованиям как Заказчика, так и его потенциальных клиентов. Используем индивидуальный подход к каждому клиенту, что позволяет нам создавать сайты, удовлетворяющие требованиям как Заказчика, так и его потенциальных клиентов.
+                    <br/>
+                    <br/>
+                        Мы всегда рады сотрудничеству и поможем в реализации любой вашей идеи по созданию и продвижению интернет-проектов, гарантируя качество своей работы.
+                </small>
+            </right>
+        </div>
+        
+        
+        <div class="what-we-do">
+            <div class="block">
+                <div class="img">
+                    <img src="paint.svg" alt="*">
+                </div>
+                Разработка адаптивных дизайнов под любое устройство при помощи FlexBox.
+            </div>
+            
+            <div class="block">
+                <div class="img">
+                    <img src="system.svg" alt="*">
+                </div>
+                Web-Сайтов на одном из самых быстрых и защищенных фреймворков - Phalcon.
+            </div>
+            
+            <div class="block">
+                <div class="img">
+                    <img src="stat.svg" alt="*">
+                </div>
+                Быстрая раскрутка вашего сайта за счет максимальной SEO оптимизации.
+            </div>
+            
+            <div class="block">
+                <div class="img">
+                    <img src="support.svg" alt="*">
+                </div>
+                Сопровождение Ваших сайтов после запуска.
+            </div>
+            
+            
+        </div>
+        
+        <div id="portfolio" class="portfolio">
+          <big>
+              Наши работы:
+          </big>
+           <div class="job">
+                <img src="1.jpg" alt="img">
+                <div class="info">
+                    <big>Сайт местного фрезировщика</big>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, obcaecati. Dolorem veritatis libero nemo aperiam cumque repellat asperiores quaerat voluptatibus odio esse, nobis sed soluta ducimus in et, provident accusamus beatae velit? Explicabo consequuntur quo aperiam, sapiente qui cum rem iste! Soluta inventore, voluptatibus vel et facere perferendis, quibusdam quae.</small>
+                    <div class="link">
+                       <span>Дата создания: 24 июня 2017 года</span>
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="more">
+                <a href="">Показать еще</a>
+            </div>
+        </div>
+        
+        <div id="contacts" class="contact-us">
+            <div class="content">
+               <big>Напишите нам и мы с Вами свяжемся:</big>
+                <form method="post">
+                    <input type="text" name="name" placeholder="Ваше имя и фамилия">
+                    <input type="text" name="email" placeholder="E-mail адрес">
+                    <input type="submit" value="Отправить">
+                </form>
+                <div class="phone">
+                    <img src="phone.svg" alt="*"> +38-097-699-62-61 &bull; +38-073-067-01-44 &bull; +38-066-198-13-20
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        &copy; MonoWeb 2017 - All rights reserved.
+    </footer>
+    
+    <script src="jquery-3.2.1.js"></script>
+    <script src="loader.js"></script>
+    
+    <script type="text/javascript">
+        $("#fakeloader").fakeLoader({
+            bgColor: '#fff',
+            spinner: 'spinner4'
+        });
+        
+        $(function(){
+           $(".panel").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 2000);
+           });
+            $(".order").on("click", function(){
+                var top = $("#contacts").offset().top;
+                $('body,html').animate({scrollTop: top}, 2000);
+            });
+        });
+    </script>
+</body>
+</html>

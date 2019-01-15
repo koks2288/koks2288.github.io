@@ -58,7 +58,11 @@ ul, li{
 	height: 75px;
 	overflow: hidden;
 }
-
+.main_menu>.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
 .main_menu ul>a>li{
 	display: inline-block;
 	width: 200px;
@@ -71,6 +75,11 @@ ul, li{
 }
 .main_menu ul>a>li:hover{
 	color: #F8FF00;
+}
+#main_menu.fixed>.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 #main_menu.fixed {
 	background: #006F2F;
@@ -141,6 +150,11 @@ ul, li{
 .main_button a:hover{
 
 	color: #F8FF00;
+}
+.call_me>.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 .call_me{
 	background: #C0C0C0;
@@ -357,11 +371,16 @@ input[type=number]{
 	//margin-top: 100px;/*************************************/
 	padding:25px;
 	padding-bottom: 60px;
-	border-bottom: 10px #212529 solid;
 
 }
 .How_to_work h2{
 	font-weight: bold;
+}
+.How_to_work>.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
 }
 .Work_block{
 	text-align: center;
@@ -399,6 +418,7 @@ input[type=number]{
 	
 }
 .quote h2{
+	text-align: center;
 	margin: auto;
 	font-size: 44px;
 	line-height: 1.5;
@@ -407,6 +427,14 @@ input[type=number]{
 	//background-image: url(/images/download.jpg);
 	//background: #FFFDD0;
 	padding: 10px;
+	border-bottom: 10px #212529 solid;
+
+}
+.action>.row{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+
 }
 /* .action_content h2{
 	-moz-transform: rotate(-90deg);
@@ -466,6 +494,11 @@ input[type=number]{
 }
 .map{
 	margin-top: 150px;
+}
+.map>.row{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .map_info_block{
 	text-align: center;
@@ -527,6 +560,12 @@ input[type=number]{
 }
 .footer_up a:hover{
 	color: #fff;
+}
+.images_modalwindow{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	
 }
 .ModalWindow{
 	height: 675px;

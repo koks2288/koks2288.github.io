@@ -1,0 +1,60 @@
+
+.opic{
+    display: none;
+}
+.opic1{
+    display: none;
+}
+.opic2{
+    display: none;
+}
+.opic3{
+    display: none;
+}
+
+.description{
+    margin-top: 550px;
+}
+.description_center{
+    margin-top: 750px;
+}
+.description1{
+    display: block;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: -250px;
+   
+}
+.description2{
+    display: block;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: -250px;
+   
+}
+
+.description3{
+    position: absolute;
+   
+   
+}
+.description4{
+    display: block;
+    position: absolute;
+    margin-top: 400px;
+    margin-left:  -1100px;
+   
+}
+.description5{
+    position: absolute;
+    margin-left: -335px;
+   
+}
+.description6{
+    display: block;
+    position: absolute;
+    margin-top: -250px;
+    margin-left:  -1300px;
+    width: 1300px;
+   
+}

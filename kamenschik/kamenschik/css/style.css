@@ -1,0 +1,588 @@
+/*******ОСНОВНЫЕ СТИЛИ***************/
+
+
+*{ 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+    margin: 0;
+    background: url('../images/fon.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 94px;  /*это высота футера*/
+}
+
+p, a{
+    font-family:Roboto;/*шрифт*/
+    font-size: 16px;
+}
+ 
+.img-thumbnail{
+    padding: 0;
+}
+
+
+/*details, summary{
+    outline: none;
+    position: relative;
+    top: -25px;
+}
+
+details summary::-webkit-details-marker {
+     color: #c15018;
+     font-size: 50px;
+}
+
+details summary::-moz-details-marker {
+     color: #c15018;
+     font-size: 50px;
+}*/
+
+
+
+hr.line {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*******ШАПКА***************/
+
+.headcontent{
+    color:white;
+
+    background: linear-gradient(to bottom, #90dffe 0%,#38a3d1 100%);
+    /* background: transparent;
+    background: -webkit-linear-gradient(top, #ff5005 0%,#e20404 44%,#ffc300 100%);
+    background: -moz-linear-gradient(top, #ff5005 0%,#e20404 44%,#ffc300 100%);
+    background: -ms-linear-gradient(top, #ff5005 0%,#e20404 44%,#ffc300 100%);
+    background: -Uzbl-linear-gradient(top, #ff5005 0%,#e20404 44%,#ffc300 100%);
+    background: - Blink-linear-gradient(top, #ff5005 0%,#e20404 44%,#ffc300 100%);*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 70px;    
+    border-bottom-right-radius: 70px;
+    border:3px #eaeff2 solid;
+    border-top: none;
+}
+
+
+.headcontent1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.headcontent img{
+    width: 100%;
+    padding-top: 35px;
+}
+
+
+.headnav{
+    padding-top: 15px;
+ background: linear-gradient(to bottom, #90dffe 0%,#38a3d1 100%);
+   /* background: transparent;
+    background: -webkit-linear-gradient(left, rgba(224,51,35,1) 0%,rgba(255,200,63,1) 12%,rgba(255,200,63,1) 13%,rgba(247,95,61,1) 22%,rgba(255,200,63,1) 31%,rgba(255,200,63,1) 39%,rgba(242,100,0,1) 51%,rgba(242,100,0,1) 54%,rgba(255,200,63,1) 63%,rgba(242,100,0,1) 75%,rgba(255,200,63,1) 89%,rgba(242,100,0,1) 99%);  
+    background: -o-linear-gradient(left, rgba(224,51,35,1) 0%,rgba(255,200,63,1) 12%,rgba(255,200,63,1) 13%,rgba(247,95,61,1) 22%,rgba(255,200,63,1) 31%,rgba(255,200,63,1) 39%,rgba(242,100,0,1) 51%,rgba(242,100,0,1) 54%,rgba(255,200,63,1) 63%,rgba(242,100,0,1) 75%,rgba(255,200,63,1) 89%,rgba(242,100,0,1) 99%);
+    background: -moz-linear-gradient(left, rgba(224,51,35,1) 0%,rgba(255,200,63,1) 12%,rgba(255,200,63,1) 13%,rgba(247,95,61,1) 22%,rgba(255,200,63,1) 31%,rgba(255,200,63,1) 39%,rgba(242,100,0,1) 51%,rgba(242,100,0,1) 54%,rgba(255,200,63,1) 63%,rgba(242,100,0,1) 75%,rgba(255,200,63,1) 89%,rgba(242,100,0,1) 99%);
+    background: -ms-linear-gradient(left, rgba(224,51,35,1) 0%,rgba(255,200,63,1) 12%,rgba(255,200,63,1) 13%,rgba(247,95,61,1) 22%,rgba(255,200,63,1) 31%,rgba(255,200,63,1) 39%,rgba(242,100,0,1) 51%,rgba(242,100,0,1) 54%,rgba(255,200,63,1) 63%,rgba(242,100,0,1) 75%,rgba(255,200,63,1) 89%,rgba(242,100,0,1) 99%);
+    background: -Uzbl-linear-gradient(left, rgba(224,51,35,1) 0%,rgba(255,200,63,1) 12%,rgba(255,200,63,1) 13%,rgba(247,95,61,1) 22%,rgba(255,200,63,1) 31%,rgba(255,200,63,1) 39%,rgba(242,100,0,1) 51%,rgba(242,100,0,1) 54%,rgba(255,200,63,1) 63%,rgba(242,100,0,1) 75%,rgba(255,200,63,1) 89%,rgba(242,100,0,1) 99%);
+    background: -Blink-linear-gradient(left, rgba(224,51,35,1) 0%,rgba(255,200,63,1) 12%,rgba(255,200,63,1) 13%,rgba(247,95,61,1) 22%,rgba(255,200,63,1) 31%,rgba(255,200,63,1) 39%,rgba(242,100,0,1) 51%,rgba(242,100,0,1) 54%,rgba(255,200,63,1) 63%,rgba(242,100,0,1) 75%,rgba(255,200,63,1) 89%,rgba(242,100,0,1) 99%);*/
+
+    border:3px #eaeff2 solid;/*обводка обычная*/
+    border-top: none;/*удалить верхнюю обводку*/
+    height: 50px;
+    line-height: 14px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; 
+    margin-bottom: 15px;
+        
+}
+
+.headnav ul li{
+    display: inline;
+    margin-right: 15%;
+}
+
+.headnav ul li a{
+    font-size: 100%; /*размер шрифта*/
+    font-family: 'Comic Sans MS';/*шрифт*/
+    color:#060606;
+    text-shadow:0px 0px 2px black;/*тень(1по х 2 по у 3 величена 4 цвет) */
+    text-decoration: none;/* убрать подчёркивание*/
+
+}
+
+ .headnav a:hover{
+    color:#f27813; 
+ }
+
+
+.headnav1 ul li{
+    display: inline;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+
+.headnav1 a{
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    background: url(../images/bloc.png);
+    width: 152px;
+    height: 45px !important; 
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+
+}
+.headnav1 a:hover{
+    color: black;
+
+}
+
+
+
+/*******ОБЩИЕ ОСНОВНЫЕ ЧАСТИ СТРАНИЦ***************/
+
+
+section{
+    margin-top: 25px;/*верхний отступ*/
+    margin-bottom: 25px;/*нижний отступ*/   
+}
+
+
+.maincontent{
+    background-color: #FFFBA9;
+    border-radius: 25px;
+    border: 3px #eaeff2 solid;
+    margin-bottom: 15px;/*отступ внизу*/
+}
+
+
+
+
+
+/*******ОСНОВНЫЕ ЧАСТИ ОТДЕЛЬНЫХ СТРАНИЦ***************/
+
+.jumbotron.brickwall{
+    margin-top: 0px;
+    border: 3px white solid;
+    border-top: none;
+    border-radius: 50px;    
+    background: #FFFBA9 url(../images/window1.png);
+    background-size: cover;
+    height: 648px;
+    
+}
+
+.jumbotron h2{
+    padding-top: 92px; /*отступ с верху в блоке*/
+    text-align: center;
+    font-family:'Arial';
+    text-shadow: 1px 2px 5px white;
+}
+
+.jumbotron p{
+    font-size:20px;
+   text-decoration: underline;
+
+    
+}
+
+
+
+.uslugi img{
+    width: 130px;   
+}
+
+.uslugi img:hover{
+    opacity: 0.75;
+}
+
+
+
+.handshake{
+    background: url(../images/hends.png) no-repeat;/*картинка не должна повторяться если она меньше величены блока*/
+    background-size: 100% auto;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.handshake h2{
+    padding-top: 75px;
+    text-shadow: 4;
+    color: white;
+}
+
+    
+
+.menu {    
+    padding: 0;
+}
+
+.menu a{
+    background:#c15018;
+    width: 100%;
+    display:block;
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+}
+
+.menu a:hover{
+    background:#d0703e;
+}
+
+.menu a.activ{
+    background:#790029;
+}
+
+
+
+ .panell h2{
+    color: #EB8708;
+ } 
+
+ .panell a{
+    text-decoration: none;
+ }
+
+ .panell h2:hover{
+    color:#953502; 
+ }
+
+.panell img:hover{ /*подсветка для картинок */
+    opacity: .75;  /*прозрачность*/
+    -webkit-transform: skewY(20deg) rotate(360deg) scale(1.2);
+    -o-transform: skewY(20deg) rotate(360deg) scale(1.2);
+    -moz-transform: skewY(20deg) rotate(360deg) scale(1.2);
+    -ms-transform: skewY(20deg) rotate(360deg) scale(1.2);
+    -Uzbl-transform: skewY(20deg) rotate(360deg) scale(1.2);
+    - Blink-transform: skewY(20deg) rotate(360deg) scale(1.2);
+    transform: skewY(20deg) rotate(360deg) scale(1.2);
+}
+
+.panell img{
+    transition:all 1.5s ease;
+    border-radius: 144px;
+    box-shadow:3px 3px 5px black;/*тень(1по х 2 по у 3 величена 4 цвет) */
+}
+
+
+.maincontent1{
+    background-color: #fff;
+    border-radius: 25px;
+    border: 3px #eaeff2 solid;
+    margin-bottom: 15px;/*отступ внизу*/
+    background: url(../images/handshake.png);
+}
+
+
+.maincontent2{
+    background-color: #fff;
+    margin-bottom: 15px;/*отступ внизу*/
+    min-height: 2600px;
+}
+
+
+.partners1{
+    margin-top: 350px;
+}
+
+.partners1 img{
+    height: 50%;
+    width: 50%;
+}
+
+
+.text1{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Comic Sans MS';
+}
+
+.text2{
+    color: #fff;    
+}
+
+.posluga:hover::after { 
+ content: attr(data-title); 
+  position: absolute;
+  width: 90%;
+height: 200px;
+top: 5%;
+left: 5%;
+    z-index: 1;
+    background: rgba(255,255,255,0.01);
+ color: white;
+text-shadow: 2px 2px 0px black;
+    font-family: Arial, sans-serif; 
+    font-size: 24px; 
+}
+
+
+/*******ФУТЕР***************/
+
+.footcontent{
+    background: linear-gradient(to top, #FF5C07, #EB8708);  
+    padding: 15px;
+    border-top-left-radius: 30px;   
+    border-top-right-radius: 30px;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 94px;
+
+}
+
+
+
+/*******АНИМАЦИИ***************/
+.animater {
+    -webkit-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -ms-animation-duration: 5s;
+    -Uzbl-animation-duration: 5s;
+    - Blink-animation-duration: 5s;
+}
+.animatere{
+    -webkit-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -ms-animation-duration: 5s;
+    -Uzbl-animation-duration: 5s;
+    - Blink-animation-duration: 5s;
+
+
+}
+.animaterer{
+    -webkit-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    -Uzbl-animation-duration: 3s;
+    - Blink-animation-duration: 3s;
+
+}
+
+.animater1{
+    -webkit-animation-duration: 2s;
+        -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -Uzbl-animation-duration: 2s;
+    - Blink-animation-duration: 2s;
+}
+
+
+.animater7{
+    -webkit-animation-duration: 3s;
+        -o-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    -Uzbl-animation-duration: 3s;
+    - Blink-animation-duration: 3s;
+
+}
+.animatere6{
+    -webkit-animation-duration: 5s;
+        -o-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -ms-animation-duration: 5s;
+    -Uzbl-animation-duration: 5s;
+    - Blink-animation-duration: 5s;
+}
+
+/********ФОРУМ*********/
+
+
+/* Общие настройки для таблиц, т.е. для разделов и списков тем  */
+.table {
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+/* У таблиц, в которых список тем или сообщений, нет пустого пространства снизу  */
+.table.topictable{
+  padding-bottom: 0px;
+}
+
+@media screen and (max-width: 580px) {
+  .table {
+    display: block;
+  }
+}
+
+
+/* Отдельные строки таблиц  */
+.tablerow {
+  display: table-row;
+  background: #fff;
+}
+
+/* Строки со списком тем  */
+.topicrow {
+  background: #f5f5f5;
+}
+
+/* Четные строки со списком тем  */
+.topicrow:nth-of-type(odd) {
+  background: #e9e9e9;
+} 
+
+/* Строки сообщений  */
+
+.postrow {
+  background: #e9e9e9;
+}
+
+/* Нечетные строки сообщений, т.е. те, в которых желтые кнопки  */
+.postrow:nth-of-type(odd) {
+  background: #f5f5f5;
+} 
+
+/* Желтая шапка, в которой заглавие таблицы  */
+.mainheader {
+  width: 100%;  
+  font-weight: 900;
+  height: 75px;
+  color: #ffffff;
+  background: #f07846;
+}
+
+/* Подшапка, черная  */
+.tablerow.subheader {
+  color: #9d9f9c;
+  background: #222826;
+}
+
+.mainheader h3, .footheader h3{
+    padding: 20px;
+
+}
+
+
+/* Шапка блока со статистикой форума  */
+.footheader{
+  width: 100%;  
+  font-weight: 900;
+  height: 75px;
+  color: #ffffff;
+  background: #292428;    
+}
+
+
+
+.
+@media screen and (max-width: 580px) {
+  .tablerow {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
+
+
+/*Навигационная панель с кнопками входа регистрации*/
+
+.navbar-inverse{
+    background: #3f3f3f;   
+}
+
+.navbar input{
+    margin-right: 20px;
+
+}
+
+/*Желтые кнопки*/
+.btn-warning{
+  background: #f07846;
+}
+
+/*Отдельные столбцы таблиц, здесь задается их ширина в процентах*/
+
+.cell {
+  padding: 6px 12px;
+  display: table-cell;
+
+}
+
+/*Столбцы в списке подфорумов*/
+
+.cell.forum1{
+    width: 5%;
+}
+.cell.forum2{
+    width: 65%;
+}
+.cell.forum3{
+    width: 10%;
+}
+.cell.forum4{
+    width: 20%;
+}
+
+/*Столбцы в футере форума*/
+
+.cell.forumfooter1{
+    width: 5%;
+}
+
+.cell.forumfooter2{
+    width: 95%;
+}
+
+/*Столбцы в списках тем внутри форума*/
+
+.cell.topicforum1{
+    width: 5%;
+}
+
+.cell.topicforum2{
+    width: 60%;
+}
+.cell.topicforum3{
+    width: 10%;
+}
+.cell.topicforum4{
+    width: 5%;
+}
+.cell.topicforum5{
+    width: 20%;
+}
+
+/*Столбцы-сообщения*/
+
+.cell.postforum1{
+  width: 15%;
+}
+.cell.postforum2{
+  width: 85%;
+}
+
+/*Адаптивность под миниэкраны*/
+
+@media screen and (max-width: 580px) {
+  .cell {
+    padding: 2px 12px;
+    display: block;
+  }
+}

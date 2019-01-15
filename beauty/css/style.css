@@ -147,6 +147,10 @@ ul, li{
 	flex-direction: column;
 	padding-bottom: 20px;
 }
+.section_two>.row{
+	display: flex;
+	flex-direction: row;
+}
 .section_two h2{
 	font-weight: bold;
 	margin: 50px 0 10px 0;
@@ -201,7 +205,6 @@ ul, li{
 }
  .info_block:nth-child(2n){
 	background: #EAEAEA;
-	width: 100%;
 }
 
 .open_spiker{
@@ -415,10 +418,19 @@ ul, li{
 	font-weight: bold;
 
 }
+.serf>.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 .section_nine{
 	background: #FFD71E;
 	padding-top: 20px;
 	padding-bottom: 30px;
+}
+.section_nine>.row{
+	display: flex;
+	justify-content: space-around;
 }
 .nine_block{
 	width: 300px;
