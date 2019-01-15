@@ -1,3 +1,0 @@
-AddDefaultCharset utf-8
-  RewriteEngine On
-  RewriteRule ^forum/thema([0-9]*)/?$ modules/forum.php?act=thema&id=$1 [L,QSA]
