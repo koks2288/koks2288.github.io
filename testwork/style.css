@@ -209,7 +209,61 @@ input[name="focus-panel"]{
 	color: #fff;
 	font-size: 8.5pt;
 }
+
+.recomendation-text2 img{
+	height: 25px;
+	width: 25px;
+	margin-right: 20px;
+
+}
+.recomendation-text2{
+	background-image: url(img/RoundedRectangle3.png);
+	-webkit-background-size: 100% 60%;
+	background-size: 100% 60%;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 20px 20px 0 20px;
+}
+.recomendation-text2 p{
+	color: #fff;
+	font-size: 8.5pt;
+}
+
+.recomendation-text3 img{
+	height: 25px;
+	width: 25px;
+	margin-right: 20px;
+
+}
+.recomendation-text3{
+	background-image: url(img/RoundedRectangle3.png);
+	-webkit-background-size: 100% 55%;
+	background-size: 100% 55%;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 20px 20px 0 20px;
+}
+.recomendation-text3 p{
+	color: #fff;
+	font-size: 8.5pt;
+}
 .recomendation-text-small h4{
-	margin-top: -25px;
+	margin-top: -35px;
+	margin-left: 15px;
+}
+.recomendation-text-small2 h4{
+	margin-top: -100px;
+	margin-left: 15px;
+}
+.recomendation-text-small3 h4{
+	margin-top: -110px;
 	margin-left: 15px;
 }
