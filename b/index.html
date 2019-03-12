@@ -1,0 +1,517 @@
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<style>
+img {
+   width: 100%;
+   
+   
+}
+.row-m-t{
+  margin-top : 5px
+}
+.input-m-t{
+    width : 100px !important ;
+}
+.input-m-t2{
+    width : 200px !important ;
+}
+
+</style>
+
+
+
+<div class="container" id="tttt" >
+<!-- <div class="container-fluid"> -->
+    <img src="img/1.png" alt="" />
+    <div class="row col-md-offset-4 col-sm-offset-4"> <b><h1>ЭХОКАРДІОГРАФІЯ</h1></b> </div>
+    <div class="row row-m-t row-m-t"> 
+            <label class="col-md-1 col-md-offset-1">П.І.Б.: </label>
+            <div class="col-md-2" id='client_fio'><input type="text" class="form-control" id="s56" placeholder=" "></div>
+            <label class="col-md-2"> , Дата народження:</label>
+            <div class="col-md-1" id='client_dn'><input type="text" class="form-control" id="s57" placeholder=" "></div>
+            <label class="col-md-1">, S(тіла):</label>
+            <div class="col-md-1" id='client_st'><input type="text" class="form-control" id="s58" placeholder=" "></div>
+            <label class="col-md-2"> м2 , ІММЛШ -</label>
+            <div class="col-md-1" id='client_st'><input type="text" class="form-control" id="s59" placeholder=" "></div>
+
+            
+            
+    </div>
+    <br>
+    <form class="form-inline">
+        <div class="form-group col-md-6">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                    <th>#</th>
+                    <th>Показник</th>
+                    <th>Значення</th>
+                    <th>Межі норми</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <th>Стінка ПШ (см)</th>
+                        <td><input type="text" class="form-control" id="s1" placeholder=" "> </td>
+                        <td><0.5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <th>ПШ (см)</th>
+                        <td><input type="text" class="form-control" id="s2" placeholder=" ">  </td>
+                        <td>0.9-4.2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <th>LVOT / Корінь аорти (см)</th>
+                        <td> <input type="text" class="form-control" id="s3" placeholder=" "> </td>
+                        <td>2.0-3.8</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <th>ЛП (см)</th>
+                        <td> <input type="text" class="form-control" id="s4" placeholder=" "> </td>
+                        <td>2.0-4.0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <th>V ЛП (мл)</th>
+                        <td> <input type="text" class="form-control" id="s5" placeholder=" "> </td>
+                        <td>< 80</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <th>ПП (см)</th>
+                        <td> <input type="text" class="form-control" id="s6" placeholder=" "> </td>
+                        <td>2.0-4.5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <th>МШП (см)</th>
+                        <td> <input type="text" class="form-control" id="s7" placeholder=" "> </td>
+                        <td>0.6-1.2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <th>Стінка ЛШ (см)</th>
+                        <td> <input type="text" class="form-control" id="s8" placeholder=" "> </td>
+                        <td>0.6-1.1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <th>ФВ ЛШ (%)</th>
+                        <td> (УО/КДО)*100 
+                            <input type="text" class="form-control" id="s9" placeholder=" "> 
+                        </td>
+                        <td>> 55% </td>
+                    </tr>                           
+                </tbody>
+                </table>
+        </div>
+        <div class="form-group col-md-6">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Показник</th>
+                        <th>Значення</th>
+                        <th>Межі норми</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <th>КДР ЛШ (см)</th>
+                        <td>
+                            <input type="text" class="form-control input-m-t" id="s10" placeholder=" ">
+                        </td>
+                        <td>3.5-5.7</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <th>КСР ЛШ (см)</th>
+                        <td><input type="text" class="form-control input-m-t" id="s11" placeholder=" "></td>
+                        <td>2.3-3.8 </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <th>КДО ЛШ (мл)</th>
+                        <td><input type="text" class="form-control input-m-t" id="s12" placeholder=" "></td></td>
+                        <td>51-160</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <th>КСО ЛШ (мл)</th>
+                        <td><input type="text" class="form-control input-m-t" id="s13" placeholder=" "> </td>
+                        <td>14-70</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <th>УО ЛШ (мл)</th>
+                        <td>(КДО-КСО)=
+                            <input type="text" class="form-control input-m-t" id="s14" placeholder=" "> 
+                        </td>
+                        <td>30-100 </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <th>Е/А </th>
+                        <td><input type="text" class="form-control input-m-t" id="s15" placeholder=" "></td>
+                        <td><input type="text" class="form-control input-m-t" id="s16" placeholder=" "></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <th>E/E’ </th>
+                        <td><input type="text" class="form-control input-m-t" id="s17" placeholder=" "> </td>
+                        <td><input type="text" class="form-control input-m-t" id="s18" placeholder=" "> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <th>DecTime (E, мс) </th>
+                        <td><input type="text" class="form-control input-m-t" id="s19" placeholder=" "> </td>
+                        <td><input type="text" class="form-control input-m-t" id="s20" placeholder=" "> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <th>IVRTЛЖ (мс) </th>
+                        <td><input type="text" class="form-control input-m-t" id="s21" placeholder=" "> </td>
+                        <td><input type="text" class="form-control input-m-t" id="s22" placeholder=" "> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <th>Vp (см/с)= 
+                            <input type="text" class="form-control input-m-t" id="s23" placeholder=" ">
+                        </th>
+                        <td>( E / Vp ) = 
+                            <input type="text" class="form-control input-m-t" id="s24" placeholder=" ">
+                        </td>
+                        <td>RR:<input type="text" class="form-control  input-m-t"  id="s25" placeholder=" "></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    
+	<div class="row"> 
+            <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Клапан</th>
+                        <th>Структура</th>
+                        <th>Функція</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Мітральний</th>
+                        <td><input type="text" class="form-control "  id="s26" placeholder=" "> </td>
+                        <td><input type="text" class="form-control "  id="s27" placeholder=" "></td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">Аортальний</th>
+                        <td><input type="text" class="form-control "  id="s28" placeholder=" "></td>
+                        <td><input type="text" class="form-control "  id="s29" placeholder=" "></td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">Трикуспідальний</th>
+                        <td><input type="text" class="form-control "  id="s30" placeholder=" "></td>
+                        <td><input type="text" class="form-control "  id="s31" placeholder=" "></td>
+                        
+                      </tr>
+                      <tr>
+                            <th scope="row">Легеневої артерії</th>
+                            <td><input type="text" class="form-control "  id="s32" placeholder=" "></td>
+                            <td><input type="text" class="form-control "  id="s33" placeholder=" "></td>
+                            
+                          </tr>
+                    </tbody>
+                  </table>
+	</div>
+	
+    
+    
+    <form class="form-inline">
+        <div class="form-group row-m-t">
+            <label for="pass">Легенева гіпертензія:</label>
+            <select  class="form-control" name="s34">
+                <option>немає</option><option>помірна</option><option>виражена</option><option>тяжка</option>
+            </select>
+            <label > ,&nbsp;&nbsp;&nbsp;</label>
+        </div>
+        <div class="form-group row-m-t">
+            <label for="pass"> САТЛА = </label>
+            <input type="text" class="form-control input-m-t" id="s35" placeholder=" ">
+            <label > мм.рт.ст. ,&nbsp;&nbsp;&nbsp;</label> 
+        </div>
+        <div class="form-group row-m-t">
+            <label for="pass"> Сер.АТЛА = </label>
+            <input type="text" class="form-control input-m-t" id="s36" placeholder=" ">
+            <label > мм.рт.ст. ,&nbsp;&nbsp;&nbsp;  </label>
+        </div>
+        <div class="form-group row-m-t">
+            <label > Перикард: </label>
+            <select  class="form-control" name="s37">
+                <option>ущільнений</option><option>не ущільнений</option>
+            </select>
+            <label > ,&nbsp;&nbsp;&nbsp;</label>
+        </div>
+
+        <div class="form-group row-m-t">
+            <label > Випіт: </label>
+            <select  class="form-control" name="s38">
+                <option value="1">немає</option>
+                <option value="0">інше</option>
+            </select>
+            <label > ,&nbsp;&nbsp;&nbsp;</label>
+        </div>
+
+        <div class="form-group row-m-t">
+            <label for="pass"> НПВ: </label>
+            <input type="text" class="form-control input-m-t" id="s39" placeholder=" ">
+            <label > см </label>
+            <label > ,&nbsp;&nbsp;&nbsp;</label>
+        </div>
+
+        <div class="form-group row-m-t">
+            <label > Колабує на вдосі: </label>
+            <select  class="form-control" name="s40">
+                <option >100</option>
+                <option> <50 </option>
+                <option> <75 </option>
+                <option> >75 </option> 
+                <option>не колабує</option>
+            </select>
+            <label > % ,&nbsp;&nbsp;&nbsp;</label>
+            
+        </div>
+        <div class="form-group row-m-t">
+            <label > Діастолічна функція ЛШ: </label>
+            <select  class="form-control" name="s41">
+                <option>нормальна</option>
+                <option>порушення релаксації (Е<А)</option>
+                <option>вікові зміни</option>
+                <option>псевдонормалізація</option> 
+                <option>рестриктивне наповнення</option>
+                <option>визначити неможливо</option>
+            </select>
+            <label > ,&nbsp;&nbsp;&nbsp;</label>
+        </div>
+        <div class="form-group row-m-t">
+            <label > Сегментарна скоротливість: ( гіпер-(-1),нормо-(1),гіпо-(2),акі-(3),дискінезія-(4) ) .</label>
+        </div>
+            
+    </form>
+    <img src="img/2.png" alt="" />
+    <div class="row col-md-offset-1 row-m-t"> <b><h2>ЗАКЛЮЧЕННЯ:</h2></b> </div>
+    
+    
+    
+    <div style="text-align: left;">
+        
+        <div class="row row-m-t"> 
+                <div class="col-md-4">
+                    <label class="control-label">Скоротлива здатність міокарду : </label>
+                </div>
+                <div class="col-md-5">
+                    <input type="text" class="form-control" id="s42" placeholder=" ">
+                </div>
+                
+                <div class="col-md-1">
+                        <label class="control-label"> ( ФВ </label>
+                </div>
+                <div class="col-md-1">    
+                        
+                        <input type="text" class="form-control " id="s43" placeholder=" ">    
+                        
+                </div>
+                <div class="col-md-1">
+                    <label class="control-label"> %) </label>
+                </div> 
+        </div>
+        <div class="row row-m-t"> 
+                
+            <label class="col-md-2 control-label">Камери серця  : </label>
+            <div class="col-md-2">
+                    <select  class="form-control" name="s44"  >
+                            <option >не розширені</option>
+                            <option> розширені</option>
+                    </select>
+            </div>
+            <div class="col-md-8">
+                    <input type="text" class="form-control" id="s45" placeholder=" ">
+            </div>
+            
+        </div>
+        <div class="row row-m-t"> 
+            <label class="col-md-3 control-label">Зони гіпо- та акінезії : </label>
+            <div class="col-md-2">
+                    <select  class=" form-control" name="s46" >
+                            <option > не виявлені</option>
+                            <option> виявлені</option>
+                    </select>
+            </div>
+            <div class="col-md-7">
+                <input type="text" class="form-control " id="s47" placeholder=" ">
+            </div>    
+            
+        </div>
+        <div class="row row-m-t"> 
+            <label class="col-md-5 control-label">Гіпертрофія задньої стінки лівого шлуночка :</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="s48" placeholder=" ">
+            </div>
+            <label class="col-md-3 control-label">, міжшлуночкової перетинки</label>
+            <div class="col-md-2">
+                    <input type="text" class="form-control" id="s49" placeholder=" ">
+            </div>     
+                
+        </div>
+        <div class="row row-m-t"> 
+            <label class="col-md-5">Діастолічна дисфункція лівого шлуночка :</label>
+            <div class="col-md-7">
+                <input type="text" class="form-control" id="s50" placeholder=" ">
+            </div>
+            
+        </div>
+        <div class="row row-m-t"> 
+            <label class="col-md-2">Перикард :</label>
+            <div class="col-md-2">
+                <select name="s51" class="form-control" >
+                    <option >не ущільнений</option>
+                    <option>ущільнений</option>
+                </select>
+            </div>
+            <div class="col-md-8">
+                    <input type="text" class="form-control" id="s52" placeholder=" ">
+            </div>
+            
+        </div>
+        <div class="row row-m-t"> 
+            <label class="col-md-2">Клапанний апарат:</label>
+            <div class="col-md-10">
+                    <input type="text" class="form-control " id="s53" placeholder=" ">
+            </div>
+            
+        </div>
+        <div class="row row-m-t"> 
+            <label class="col-md-3">Особливі відмітки:</label>
+            <div class="col-md-9" >
+                    <input type="text" class="form-control" id="s54" placeholder=" ">
+            </div>
+            
+        </div>
+        <br>
+        <br>
+        <div class="row row-m-t"> 
+            <label class="col-md-1">Дата :</label>
+            <div class="col-md-2" id='doc_data'></div>
+            
+
+            <label class="col-md-2 col-md-offset-4">Лікар :  </label>
+            
+            <div class="col-md-2" id='doc_fio'> <input type="text" class="form-control" id="s55" placeholder=" "></div>
+            
+        </div>
+    </div>
+    <br><br>
+</div>
+
+
+<br>
+<br>
+<div >
+    <div class="col-md-2 col-md-offset-1">
+        <button id="cmd">Generate PDF</button>
+    </div>
+</div>
+
+<br>
+<br>
+
+<script>
+var day = new Date();
+var doc_data= day.getFullYear() +'.'+checkTime(day.getMonth()+1) +'.'+ checkTime(day.getDate());
+$('#doc_data').append(doc_data);
+function checkTime(i)
+{
+    if (i<10) 
+    {
+        i="0" + i;
+    }
+    return i;
+}
+
+$(function() {
+    $('select').change( function() {
+        //console.log('dasdasda');
+        var value = $(this).val();
+
+        //console.log(value);
+        if (value == 0 ) {
+           var other = prompt( "Введите значение :",0 );
+           //console.log(other);
+           if (!other || other == null ) {
+                //console.log('gdfdgdg ttttt',other);
+                $(this).val(1);
+                return false;
+           }
+           else{
+            //console.log('gdfdgdg ttttt',other);
+            $(this).append('<option value="' + other + '" selected="selected">' + other + '</option>');
+           }
+           
+        }
+    });
+});
+
+function saveImageToPdf(idOfHtmlElement)
+{
+    var fbcanvas = document.getElementById(idOfHtmlElement);
+    html2canvas($(fbcanvas),
+    {
+        onrendered: function (canvas) {
+            var day = new Date();
+            var width = canvas.width;
+            var height = canvas.height;
+            var millimeters = {};
+            // millimeters.width = Math.floor(width * 0.264583);
+            // millimeters.height = Math.floor(height * 0.264583);
+            millimeters.width = Math.floor(width * 0.75);
+            millimeters.height = Math.floor(height * 0.75);
+            var imgData = canvas.toDataURL('image/png');
+            var doc = new jsPDF("p", "mm", "a4");
+            doc.deletePage(1);
+            doc.addPage(millimeters.width, millimeters.height);
+            doc.addImage(imgData, 'PNG', 0, 0);
+            doc.save('WebSiteScreen' + day.getTime() + '.pdf');
+        }
+    });
+}
+
+//container 
+
+$('#cmd').click(function () { 
+    console.log('dsdfsffsdf4444444444');
+    // var day = new Date();
+    // var pdf = new jsPDF('p', 'pt', 'letter'); 
+    // var source = $('.container')[0]; 
+    // $(source).css('background-color', '#fff');
+    
+    saveImageToPdf('tttt')
+});
+
+</script>
+
+
