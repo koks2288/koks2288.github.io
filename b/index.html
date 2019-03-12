@@ -1,517 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anest</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <style>
+        img{
+            width: 100%;
+        }
+        .header h1{
+            text-align: center;
+        }
+        .PIB {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .PIB div{
+            width: 100%;
+            margin: 5px;
+        } 
+        button{
+            border: none;
+            height: 35px;
+            width: 35px;
+            font-size: 24px;
+            background: none;
+            outline: 0;
+           
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
-<style>
-img {
-   width: 100%;
-   
-   
-}
-.row-m-t{
-  margin-top : 5px
-}
-.input-m-t{
-    width : 100px !important ;
-}
-.input-m-t2{
-    width : 200px !important ;
-}
-
-</style>
-
-
-
-<div class="container" id="tttt" >
-<!-- <div class="container-fluid"> -->
-    <img src="img/1.png" alt="" />
-    <div class="row col-md-offset-4 col-sm-offset-4"> <b><h1>ЭХОКАРДІОГРАФІЯ</h1></b> </div>
-    <div class="row row-m-t row-m-t"> 
-            <label class="col-md-1 col-md-offset-1">П.І.Б.: </label>
-            <div class="col-md-2" id='client_fio'><input type="text" class="form-control" id="s56" placeholder=" "></div>
-            <label class="col-md-2"> , Дата народження:</label>
-            <div class="col-md-1" id='client_dn'><input type="text" class="form-control" id="s57" placeholder=" "></div>
-            <label class="col-md-1">, S(тіла):</label>
-            <div class="col-md-1" id='client_st'><input type="text" class="form-control" id="s58" placeholder=" "></div>
-            <label class="col-md-2"> м2 , ІММЛШ -</label>
-            <div class="col-md-1" id='client_st'><input type="text" class="form-control" id="s59" placeholder=" "></div>
-
-            
-            
-    </div>
-    <br>
-    <form class="form-inline">
-        <div class="form-group col-md-6">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                    <th>#</th>
-                    <th>Показник</th>
-                    <th>Значення</th>
-                    <th>Межі норми</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <th>Стінка ПШ (см)</th>
-                        <td><input type="text" class="form-control" id="s1" placeholder=" "> </td>
-                        <td><0.5</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <th>ПШ (см)</th>
-                        <td><input type="text" class="form-control" id="s2" placeholder=" ">  </td>
-                        <td>0.9-4.2</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <th>LVOT / Корінь аорти (см)</th>
-                        <td> <input type="text" class="form-control" id="s3" placeholder=" "> </td>
-                        <td>2.0-3.8</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <th>ЛП (см)</th>
-                        <td> <input type="text" class="form-control" id="s4" placeholder=" "> </td>
-                        <td>2.0-4.0</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <th>V ЛП (мл)</th>
-                        <td> <input type="text" class="form-control" id="s5" placeholder=" "> </td>
-                        <td>< 80</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <th>ПП (см)</th>
-                        <td> <input type="text" class="form-control" id="s6" placeholder=" "> </td>
-                        <td>2.0-4.5</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <th>МШП (см)</th>
-                        <td> <input type="text" class="form-control" id="s7" placeholder=" "> </td>
-                        <td>0.6-1.2</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <th>Стінка ЛШ (см)</th>
-                        <td> <input type="text" class="form-control" id="s8" placeholder=" "> </td>
-                        <td>0.6-1.1</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">9</th>
-                        <th>ФВ ЛШ (%)</th>
-                        <td> (УО/КДО)*100 
-                            <input type="text" class="form-control" id="s9" placeholder=" "> 
-                        </td>
-                        <td>> 55% </td>
-                    </tr>                           
-                </tbody>
-                </table>
-        </div>
-        <div class="form-group col-md-6">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Показник</th>
-                        <th>Значення</th>
-                        <th>Межі норми</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <th>КДР ЛШ (см)</th>
-                        <td>
-                            <input type="text" class="form-control input-m-t" id="s10" placeholder=" ">
-                        </td>
-                        <td>3.5-5.7</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <th>КСР ЛШ (см)</th>
-                        <td><input type="text" class="form-control input-m-t" id="s11" placeholder=" "></td>
-                        <td>2.3-3.8 </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <th>КДО ЛШ (мл)</th>
-                        <td><input type="text" class="form-control input-m-t" id="s12" placeholder=" "></td></td>
-                        <td>51-160</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <th>КСО ЛШ (мл)</th>
-                        <td><input type="text" class="form-control input-m-t" id="s13" placeholder=" "> </td>
-                        <td>14-70</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <th>УО ЛШ (мл)</th>
-                        <td>(КДО-КСО)=
-                            <input type="text" class="form-control input-m-t" id="s14" placeholder=" "> 
-                        </td>
-                        <td>30-100 </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <th>Е/А </th>
-                        <td><input type="text" class="form-control input-m-t" id="s15" placeholder=" "></td>
-                        <td><input type="text" class="form-control input-m-t" id="s16" placeholder=" "></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <th>E/E’ </th>
-                        <td><input type="text" class="form-control input-m-t" id="s17" placeholder=" "> </td>
-                        <td><input type="text" class="form-control input-m-t" id="s18" placeholder=" "> </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <th>DecTime (E, мс) </th>
-                        <td><input type="text" class="form-control input-m-t" id="s19" placeholder=" "> </td>
-                        <td><input type="text" class="form-control input-m-t" id="s20" placeholder=" "> </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">9</th>
-                        <th>IVRTЛЖ (мс) </th>
-                        <td><input type="text" class="form-control input-m-t" id="s21" placeholder=" "> </td>
-                        <td><input type="text" class="form-control input-m-t" id="s22" placeholder=" "> </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10</th>
-                        <th>Vp (см/с)= 
-                            <input type="text" class="form-control input-m-t" id="s23" placeholder=" ">
-                        </th>
-                        <td>( E / Vp ) = 
-                            <input type="text" class="form-control input-m-t" id="s24" placeholder=" ">
-                        </td>
-                        <td>RR:<input type="text" class="form-control  input-m-t"  id="s25" placeholder=" "></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </form>
-    
-	<div class="row"> 
-            <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th>Клапан</th>
-                        <th>Структура</th>
-                        <th>Функція</th>
-                        
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">Мітральний</th>
-                        <td><input type="text" class="form-control "  id="s26" placeholder=" "> </td>
-                        <td><input type="text" class="form-control "  id="s27" placeholder=" "></td>
-                        
-                      </tr>
-                      <tr>
-                        <th scope="row">Аортальний</th>
-                        <td><input type="text" class="form-control "  id="s28" placeholder=" "></td>
-                        <td><input type="text" class="form-control "  id="s29" placeholder=" "></td>
-                        
-                      </tr>
-                      <tr>
-                        <th scope="row">Трикуспідальний</th>
-                        <td><input type="text" class="form-control "  id="s30" placeholder=" "></td>
-                        <td><input type="text" class="form-control "  id="s31" placeholder=" "></td>
-                        
-                      </tr>
-                      <tr>
-                            <th scope="row">Легеневої артерії</th>
-                            <td><input type="text" class="form-control "  id="s32" placeholder=" "></td>
-                            <td><input type="text" class="form-control "  id="s33" placeholder=" "></td>
-                            
-                          </tr>
-                    </tbody>
-                  </table>
-	</div>
-	
-    
-    
-    <form class="form-inline">
-        <div class="form-group row-m-t">
-            <label for="pass">Легенева гіпертензія:</label>
-            <select  class="form-control" name="s34">
-                <option>немає</option><option>помірна</option><option>виражена</option><option>тяжка</option>
-            </select>
-            <label > ,&nbsp;&nbsp;&nbsp;</label>
-        </div>
-        <div class="form-group row-m-t">
-            <label for="pass"> САТЛА = </label>
-            <input type="text" class="form-control input-m-t" id="s35" placeholder=" ">
-            <label > мм.рт.ст. ,&nbsp;&nbsp;&nbsp;</label> 
-        </div>
-        <div class="form-group row-m-t">
-            <label for="pass"> Сер.АТЛА = </label>
-            <input type="text" class="form-control input-m-t" id="s36" placeholder=" ">
-            <label > мм.рт.ст. ,&nbsp;&nbsp;&nbsp;  </label>
-        </div>
-        <div class="form-group row-m-t">
-            <label > Перикард: </label>
-            <select  class="form-control" name="s37">
-                <option>ущільнений</option><option>не ущільнений</option>
-            </select>
-            <label > ,&nbsp;&nbsp;&nbsp;</label>
-        </div>
-
-        <div class="form-group row-m-t">
-            <label > Випіт: </label>
-            <select  class="form-control" name="s38">
-                <option value="1">немає</option>
-                <option value="0">інше</option>
-            </select>
-            <label > ,&nbsp;&nbsp;&nbsp;</label>
-        </div>
-
-        <div class="form-group row-m-t">
-            <label for="pass"> НПВ: </label>
-            <input type="text" class="form-control input-m-t" id="s39" placeholder=" ">
-            <label > см </label>
-            <label > ,&nbsp;&nbsp;&nbsp;</label>
-        </div>
-
-        <div class="form-group row-m-t">
-            <label > Колабує на вдосі: </label>
-            <select  class="form-control" name="s40">
-                <option >100</option>
-                <option> <50 </option>
-                <option> <75 </option>
-                <option> >75 </option> 
-                <option>не колабує</option>
-            </select>
-            <label > % ,&nbsp;&nbsp;&nbsp;</label>
-            
-        </div>
-        <div class="form-group row-m-t">
-            <label > Діастолічна функція ЛШ: </label>
-            <select  class="form-control" name="s41">
-                <option>нормальна</option>
-                <option>порушення релаксації (Е<А)</option>
-                <option>вікові зміни</option>
-                <option>псевдонормалізація</option> 
-                <option>рестриктивне наповнення</option>
-                <option>визначити неможливо</option>
-            </select>
-            <label > ,&nbsp;&nbsp;&nbsp;</label>
-        </div>
-        <div class="form-group row-m-t">
-            <label > Сегментарна скоротливість: ( гіпер-(-1),нормо-(1),гіпо-(2),акі-(3),дискінезія-(4) ) .</label>
-        </div>
-            
-    </form>
-    <img src="img/2.png" alt="" />
-    <div class="row col-md-offset-1 row-m-t"> <b><h2>ЗАКЛЮЧЕННЯ:</h2></b> </div>
-    
-    
-    
-    <div style="text-align: left;">
+        }
+        button:hover{
+            font-size:32px;
+            transition: all 0.3s ease;
+        }
         
-        <div class="row row-m-t"> 
-                <div class="col-md-4">
-                    <label class="control-label">Скоротлива здатність міокарду : </label>
-                </div>
-                <div class="col-md-5">
-                    <input type="text" class="form-control" id="s42" placeholder=" ">
-                </div>
-                
-                <div class="col-md-1">
-                        <label class="control-label"> ( ФВ </label>
-                </div>
-                <div class="col-md-1">    
-                        
-                        <input type="text" class="form-control " id="s43" placeholder=" ">    
-                        
-                </div>
-                <div class="col-md-1">
-                    <label class="control-label"> %) </label>
+
+    </style>
+</head>
+<body>
+    <div class="container header">
+        <div class="row">
+            <img src="img/1.png" alt="#">
+                <h1>Анестезіологія</h1>
+                <div class="PIB">
+                    <div class="" id='client_fio'><input type="text" class="form-control" id="s56" placeholder="Прiзвище, iм`я, по батьковi"></div>
+                    <div class="" id='client_dn'><input type="date" min="1900-01-01" max="2018-12-31" class="form-control" id="s57" value="Дата народження"></div>
+                    <div class="" id='client_st'><select  class="form-control"><option hidden>Оберіть стать</option><option>Чоловiча</option><option>Жiноча</option></select></div>  
                 </div> 
         </div>
-        <div class="row row-m-t"> 
-                
-            <label class="col-md-2 control-label">Камери серця  : </label>
-            <div class="col-md-2">
-                    <select  class="form-control" name="s44"  >
-                            <option >не розширені</option>
-                            <option> розширені</option>
-                    </select>
-            </div>
-            <div class="col-md-8">
-                    <input type="text" class="form-control" id="s45" placeholder=" ">
-            </div>
-            
-        </div>
-        <div class="row row-m-t"> 
-            <label class="col-md-3 control-label">Зони гіпо- та акінезії : </label>
-            <div class="col-md-2">
-                    <select  class=" form-control" name="s46" >
-                            <option > не виявлені</option>
-                            <option> виявлені</option>
-                    </select>
-            </div>
-            <div class="col-md-7">
-                <input type="text" class="form-control " id="s47" placeholder=" ">
-            </div>    
-            
-        </div>
-        <div class="row row-m-t"> 
-            <label class="col-md-5 control-label">Гіпертрофія задньої стінки лівого шлуночка :</label>
-            <div class="col-md-2">
-                <input type="text" class="form-control" id="s48" placeholder=" ">
-            </div>
-            <label class="col-md-3 control-label">, міжшлуночкової перетинки</label>
-            <div class="col-md-2">
-                    <input type="text" class="form-control" id="s49" placeholder=" ">
-            </div>     
-                
-        </div>
-        <div class="row row-m-t"> 
-            <label class="col-md-5">Діастолічна дисфункція лівого шлуночка :</label>
-            <div class="col-md-7">
-                <input type="text" class="form-control" id="s50" placeholder=" ">
-            </div>
-            
-        </div>
-        <div class="row row-m-t"> 
-            <label class="col-md-2">Перикард :</label>
-            <div class="col-md-2">
-                <select name="s51" class="form-control" >
-                    <option >не ущільнений</option>
-                    <option>ущільнений</option>
-                </select>
-            </div>
-            <div class="col-md-8">
-                    <input type="text" class="form-control" id="s52" placeholder=" ">
-            </div>
-            
-        </div>
-        <div class="row row-m-t"> 
-            <label class="col-md-2">Клапанний апарат:</label>
-            <div class="col-md-10">
-                    <input type="text" class="form-control " id="s53" placeholder=" ">
-            </div>
-            
-        </div>
-        <div class="row row-m-t"> 
-            <label class="col-md-3">Особливі відмітки:</label>
-            <div class="col-md-9" >
-                    <input type="text" class="form-control" id="s54" placeholder=" ">
-            </div>
-            
-        </div>
-        <br>
-        <br>
-        <div class="row row-m-t"> 
-            <label class="col-md-1">Дата :</label>
-            <div class="col-md-2" id='doc_data'></div>
-            
-
-            <label class="col-md-2 col-md-offset-4">Лікар :  </label>
-            
-            <div class="col-md-2" id='doc_fio'> <input type="text" class="form-control" id="s55" placeholder=" "></div>
-            
-        </div>
     </div>
-    <br><br>
-</div>
-
-
-<br>
-<br>
-<div >
-    <div class="col-md-2 col-md-offset-1">
-        <button id="cmd">Generate PDF</button>
-    </div>
-</div>
-
-<br>
-<br>
-
-<script>
-var day = new Date();
-var doc_data= day.getFullYear() +'.'+checkTime(day.getMonth()+1) +'.'+ checkTime(day.getDate());
-$('#doc_data').append(doc_data);
-function checkTime(i)
-{
-    if (i<10) 
-    {
-        i="0" + i;
-    }
-    return i;
-}
-
-$(function() {
-    $('select').change( function() {
-        //console.log('dasdasda');
-        var value = $(this).val();
-
-        //console.log(value);
-        if (value == 0 ) {
-           var other = prompt( "Введите значение :",0 );
-           //console.log(other);
-           if (!other || other == null ) {
-                //console.log('gdfdgdg ttttt',other);
-                $(this).val(1);
-                return false;
-           }
-           else{
-            //console.log('gdfdgdg ttttt',other);
-            $(this).append('<option value="' + other + '" selected="selected">' + other + '</option>');
-           }
-           
-        }
-    });
-});
-
-function saveImageToPdf(idOfHtmlElement)
-{
-    var fbcanvas = document.getElementById(idOfHtmlElement);
-    html2canvas($(fbcanvas),
-    {
-        onrendered: function (canvas) {
-            var day = new Date();
-            var width = canvas.width;
-            var height = canvas.height;
-            var millimeters = {};
-            // millimeters.width = Math.floor(width * 0.264583);
-            // millimeters.height = Math.floor(height * 0.264583);
-            millimeters.width = Math.floor(width * 0.75);
-            millimeters.height = Math.floor(height * 0.75);
-            var imgData = canvas.toDataURL('image/png');
-            var doc = new jsPDF("p", "mm", "a4");
-            doc.deletePage(1);
-            doc.addPage(millimeters.width, millimeters.height);
-            doc.addImage(imgData, 'PNG', 0, 0);
-            doc.save('WebSiteScreen' + day.getTime() + '.pdf');
-        }
-    });
-}
-
-//container 
-
-$('#cmd').click(function () { 
-    console.log('dsdfsffsdf4444444444');
-    // var day = new Date();
-    // var pdf = new jsPDF('p', 'pt', 'letter'); 
-    // var source = $('.container')[0]; 
-    // $(source).css('background-color', '#fff');
     
-    saveImageToPdf('tttt')
-});
+    <div class="container">
+        <div class="row">
+            <table class="table table-bordered">
+               <tbody>
+                 <tr>
+                   <th style="padding-top: 35px;">На момент огляду скарги:</th>
+                   <td><select class="form-control" size='4' multiple='multiple'>
+                       <option selected hidden>Активно не висуває</option>
+                       <option>На головні болі</option>
+                       <option>На шум у вухах</option>
+                       <option>На запаморочення</option>
+                       <option>На відчуття нестачі повітря</option>
+                       <option>На болі за грудиною</option>
+                       <option>На набряки на ногах</option>
+                       <option>На серцебитя</option>
+                       <option>На відчуття перебоїв в роботі серця</option>
+                       <option>На погану переносимість фізичних навантажень</option>
+                       <option>На відчуття жару</option>
+                       <option>На озноб</option>
+                       <option>На мерзлякуватість кінцівок</option>
+                       <option>На виділення з носа</option>
+                       <option>На біль у горлі</option>
+                       <option>На чхання</option>
+                       <option>На не продуктивний кашель</option>
+                       <option>На продуктивний кашель</option>
+                       <option>На зниження апетиту</option>
+                       <option>На печію</option>
+                       <option>На відрижку</option>
+                       <option>На нудоту</option>
+                       <option>На блювоту</option>
+                       <option>На болі в животі</option>
+                       <option>На закрепи</option>
+                       <option>На закрепи</option>
+                       <option>На проноси</option>
+                       <option>На виділення крові</option>
+                   </select></td>
+                 </tr>
+               </tbody>
+           </table>
+           <table class="table table-bordered">
+               <thead>
+                 <p style="font-weight:bold;">Данні фізикального обстеження: </p>                       
+                  
+               </thead>
+               <tbody>
+                   <tr>
+                       <th>Загальний стан:</th>
+                       <td><select class="form-control">
+                           <option>Відносно задовільний</option>
+                           <option>Задовільний</option>
+                           <option>Середньої важкості</option>
+                           <option>Важкий</option>
+                       </select></td>
+                       <td><select class="form-control">
+                           <option>Стабільний</option>
+                           <option>Нестабільний</option>
+                       </select></td>
+                   </tr>
+                   <tr>
+                       <th>Пацієнт в:</th>
+                       <td><select class="form-control">
+                           <option>Свідомості </option>
+                           <option>Оглушенні</option>
+                           <option>Сопорі</option>
+                           <option>Комі І</option>
+                           <option>Комі ІІ</option>
+                           <option>Комі ІІІ</option>
+                       </select></td>
+                       <td><select class="form-control">
+                           <option>Орієнтований у просторі, часі та власній персоні</option>
+                           <option>Дезорієнтований у просторі, часі та власній персоні</option>
+                       </select></td>
+                   </tr>
+           </tbody>
+                   </table>
+                   <table class="table table-bordered">
+           <tbody>       
+               <tr>
+                   <th style="width:30%;">Шкіра:</th>
+                       <td><select class="form-control" size='4' multiple='multiple'>
+                           <option>Без особливостей </option>
+                           <option>Бліда</option>
+                           <option>Блідо-рожева</option>
+                           <option>Вкрита висипом</option>
+                           <option>Рубці</option>
+                           <option>гнійники</option>
+                           <option>гіперемована</option>
+                           <option>Синюшна</option>
+                           <option>Акроціаноз</option>
+                           <option>Суха</option>
+                           <option>Надмірно зволожена</option>
+                           <option>Спостерігаються атрофічні зміни</option>
+                       </select></td>
+                   </tr>
+                   <tr>
+                       <th style="width:30%;">Видимі слизові оболонки:</th>
+                       <td><select class="form-control" size='4' multiple='multiple'>
+                           <option>Без особливостей</option>
+                           <option>Блідо-рожеві</option>
+                           <option>Ін’єкція склер</option>
+                           <option>Гіперемія зіву</option>
+                       </select></td>
+                   </tr>
+               </tbody>
+           </table>
+           <table class="table table-bordered">
+               <tbody>  
+                   <tr>
+                       <th>Артеріальний тиск:</th>
+                       <td><input type="number" class="form-control" id="" placeholder="Права рука"></td>
+                       <td><input type="number" class="form-control" id="" placeholder="Ліва рука"></td>
+                   </tr>
+               </tbody>
+           </table>
+           <table class="table table-bordered">
+               <tbody>       
+                   <tr>
+                       <th style="padding-top: 35px;">Пульс :</th>
+                       <td style="padding-top: 35px;"><input type="number" class="form-control" id="" placeholder="Введіть значення"></td>
+                       <td><select class="form-control" size='4' multiple='multiple'>
+                           <option>Задовільних властивостей</option>
+                           <option>Аритмічний</option>
+                           <option>Ослаблений</option>
+                           <option>Напружений</option>
+                           <option>М’який</option>
+                           <option>Ниткоподібний</option>
+                       </select></td>
+                       <th style="padding-top: 35px;">Дефіцит пульсу: немає </th>
+                       <td style="padding-top: 35px;"><input type="number" class="form-control" id="" placeholder="Введіть значення"></td>
+                   </tr>
+               </tbody>
+           </table>
+           <table class="table table-bordered">
+               <tbody>
+                   <tr>
+                       <th>SPO2:</th>
+                       <td><input type="number" class="form-control" id="" placeholder="Введіть значення"></td>
+                   </tr>
+                   <tr>
+                       <th>ЧД:</th>
+                       <td><input type="number" class="form-control" id="" placeholder="Введіть значення"></td>
+                   </tr> 
+               </tbody>
+           </table>  
+           <table class="table table-bordered">
+               <tbody>
+                   <tr>
+                       <th style="padding-top: 25px;"> Серцеві тони:</th>
+                       <td><select class="form-control" size='4' multiple='multiple'>
+                           <option>звучні ритмічні</option>
+                           <option>ослаблені</option>
+                           <option>ритмічні</option>
+                           <option>аритмічні</option>
+                           <option>звучні</option>
+                           <option>вислуховується третій тон</option>
+                           <option>вислуховується гарматний тон</option>
+                       </select></td>
+                       <th style="padding-top: 25px;"> Акцент ІІ / (І) тону на</th>
+                       <td><select class="form-control" size='4' multiple='multiple'>
+                           <option>аорті</option>
+                           <option>легеневому стовбурі</option>
+                       </select></td>
+                       <td><select class="form-control" size='4' multiple='multiple'>
+                           <option>Шуми не вислуховуються </option>
+                           <option>систолічний на верхівці</option>
+                           <option>систолічний на аорті</option>
+                           <option>систолічний на легеневому стовбурі</option>
+                           <option>діастолічний на верхівці</option>
+                           <option>діастолічний на аорті</option>
+                           <option>діастолічний на легеневому стовбурі</option>
+                       </select></td>
+                       <td><select class="form-control" size='4' multiple='multiple'>
+                           <option>межі серця в нормі</option>
+                           <option>розширенні вліво</option>
+                           <option>розширенні вправо</option>
+                       </select></td>
+                   </tr>
+               </tbody>
+           </table>  
+           <table class="table table-bordered">
+               <tbody>
+                   <tr>
+                       <th style="padding-top: 35px;">В легенях дихання: </th>
+                       <td><select class="form-control" size='4' multiple='multiple'>
+                           <option>везикулярне</option>
+                           <option>жорстке</option>
+                           <option>бронхіальне</option>
+                           <option>пуерильне</option>
+                           <option>ослабленне в нижніх відділах</option>
+                           <option>ослаблене зправа</option>
+                           <option>ослаблене зліва</option>
+                       </select></td>
+                       <th style="padding-top: 35px;"> Хрипи та додаткові шуми не вилуховуються</th>
+                       <td><select class="form-control" size='4' multiple='multiple'>
+                           <option>там само дрібнопухирцеві хрипи</option>
+                           <option>там само середньопухирцеві хрипи</option>
+                           <option>там само сухі хрипи</option>
+                           <option>там само крепітуючі хрипи</option>
+                           <option>розсіяні крепітуючі хрипи</option>
+                           <option>розсіяні дрібнопухирцеві хрипи</option>
+                           <option>розсіяні середньопухирцеві хрипи</option>
+                       </select></td>                        
+                   </tr>
+               </tbody>
+           </table>  
+           <table class="table table-bordered">
+               <tbody>
+                   <tr>
+                       <th style="padding-top: 35px;">Перкуторно:</th>
+                       <td><select class="form-control" size='4' multiple='multiple'>
+                           <option>легеневий звук </option>
+                           <option>коробковий звук</option>
+                           <option>притуплення там само</option>
+                           <option>тупий звук там само</option>
+                       </select></td>
+                   </tr>
+                   <tr>
+                       <th style="padding-top: 35px;">Живіт:</th>
+                       <td><select class="form-control" size='4' multiple='multiple'>
+                           <option>м’який безболісний  </option>
+                           <option>м’який</option>
+                           <option>безболісний</option>
+                           <option>збільшений в об’ємі за рахунок підшкірної клітковини</option>
+                           <option>збільшений в розмірі за рахунок асциту</option>
+                           <option>по ходу кишківника</option>
+                           <option>болісний в правому підребер’ї</option>
+                           <option>болісний в епігастрії</option>
+                           <option>болісний в лівому підреберї</option>
+                           <option>болісний в правому фланку</option>
+                           <option>болісний в лівому фланку</option>
+                           <option>болісний в колопупковій ділянці</option>
+                           <option>болісний в правій здухвинній ділянц</option>
+                           <option>болісний в лівій здухвинній ділянці</option>
+                           <option>болісність над лонним симфізом спостерігається «голова медузи»</option>                           
+                       </select></td>
+                   </tr> 
+                   <tr>
+                       <th style="padding-top: 35px;">Периферичні набряки :</th>
+                       <td><select class="form-control" size='4' multiple='multiple'>
+                           <option>відсутні </option>
+                           <option>пастозність гомілок</option>
+                           <option>стоп</option>
+                           <option>гомілок</option>
+                           <option>бедра</option>
+                           <option>анасарка</option>
+                           <option>середньої третини гомілок</option>
+                       </select></td>
+                   </tr>
+               </tbody>
+           </table>  
+           <table class="table table-bordered">
+               <tbody>
+                   <tr>
+                       <th style="padding-top: 35px;">На ЕКГ:</th> 
+                       <td><select class="form-control" size='4' multiple='multiple'>
+                               <option>синусовий регулярний  </option>
+                               <option>не синусовий</option>
+                               <option>регулярний</option>
+                               <option>нерегулярний</option>
+                               <option>фібриляція передсердь</option>
+                               <option>тріпотіння передсердь</option>
+                               <option>нижньопередсердний ритм</option>
+                               <option>АВ-вузловий ритм</option>
+                               <option>ідіовентрикулярний ритм</option>                            
+                           </select></td>
+                       <th style="padding-top: 35px;">з ЧСС</th>
+                       <td style="padding-top: 35px;"><input type="number" class="form-control" id="" placeholder="Введіть значення"></td>
+           
+                   </tr>
+               </tbody>
+           </table>   
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th style="padding-top: 35px;">Електрична вісь серця:</th>
+                        <td style="padding-top: 35px;"><input type="number" class="form-control" id="" placeholder="Введіть значення"></td>
+                        <td><select class="form-control" size='4' multiple='multiple'>
+                                <option>нормальна</option>
+                                <option>зміщена вліво</option>
+                                <option>зміщена вправо</option>                       
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>  
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th>PQ</th>
+                        <td><input type="number" class="form-control" id="" placeholder="Введіть значення"></td>
+                        <th>QRS</th>
+                        <td><input type="number" class="form-control" id="" placeholder="Введіть значення"></td>
+                        <th>QT</th>
+                        <td><input type="number" class="form-control" id="" placeholder="Введіть значення"></td>
+                    </tr>
+                </tbody>
+            </table>  
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th style="width:30%;">Пацієнту заплановане хірургічне втручання: </th>
+                        <td><input type="text" class="form-control" id="" placeholder="Введіть назву"></td>
 
-</script>
+                    </tr>    
+                </tbody>
+            </table> 
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th>Malampati (I-IV)</th>
+                        <td><input type="text" class="form-control" id="" placeholder="Введіть значення"></td>
+                        <th>EL-GANZOURI</th>
+                        <td><input type="number" class="form-control" id="" placeholder="Введіть значення"></td>
+                        <th>ASA</th>
+                        <td><input type="text" class="form-control" id="" placeholder="Введіть значення"></td>
+                    </tr>
+                </tbody>
+            </table> 
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th style="width:40%;">Протипоказів до проведення операції та анестезії  під:</th>
+                        <td><select class="form-control">
+                            <option>немає</option>
+                            <option>мононаркоз sol. </option>
+                            <option>Propofoli</option>
+                            <option>комбінований наркоз …</option>
+                        </select></td>
+                        
+                    </tr>
+                </tbody>
+            </table> 
+            <table class="table table-bordered">
+                <thead>
+                    <p style="font-weight:bold;">Діагноз: </p>                          
+                </thead>
+                <tbody>
+                    <!-- //**// -->
+                </tbody>
+            </table> 
+            <table class="table table-bordered">
+                <thead>
+                    <p style="font-weight:bold;">Рекомендації: </p>                          
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="width:30%;">Дообстеження: </th>
+                        <td><input type="text" class="form-control" id="" placeholder="Введіть код з прайсу"></td>
+                        <td style="text-align: center;"><button>+</button></td>
+
+                    </tr>
+                </tbody>
+            </table>   
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th>Лікування: </th>
+                        <td><select class="form-control">
+                                <option>1. Дієта № 0-15, перехід на середземноморську дієту, обмежене споживання вуглеводів. </option>
+                                <option>2. Дозовані фізичні навантаження |під контролем лікаря реабілітолога|, бассейн з тренером, пішохідні прогулянки. </option>
+                                <option>3. Відмова від паління та вживання алкоголю. </option>                       
+                                <option>4. Препарати назва доза кратність прийому. </option>                       
+                            </select></td>
+                    </tr>
+                   
+                </tbody>
+            </table>          
+        </div>
+    </div>
 
 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
